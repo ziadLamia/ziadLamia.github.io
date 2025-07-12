@@ -8,4 +8,4 @@ Site officiel de l'International Conference on Complex Dynamics: Modeling and Si
 2. Ouvrir `index.html` dans un navigateur
 
 ## License
-Libre d'utilisation pour les organisateurs de la conférence
+Libre d'utilisation pour les organisateurs de la conférence# Test
