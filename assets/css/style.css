@@ -220,40 +220,28 @@
             color: #666;
         }
 
-#organizers {
-    padding: 4rem 0;
+.organizer-contact {
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.organizers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+.organizer-contact a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
-.organizer-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-.organizer-card:hover {
-    transform: translateY(-5px);
-}
-
-.organizer-name {
+.organizer-contact a:hover {
     color: #2c3e50;
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+    text-decoration: underline;
 }
 
-.organizer-affiliation {
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.5;
+.icon {
+    fill: #666;
+    vertical-align: middle;
 }
         .sponsors-section {
             background-color: white;
