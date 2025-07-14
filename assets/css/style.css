@@ -219,7 +219,42 @@
             font-size: 0.9rem;
             color: #666;
         }
-        
+
+#organizers {
+    padding: 4rem 0;
+}
+
+.organizers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.organizer-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.organizer-card:hover {
+    transform: translateY(-5px);
+}
+
+.organizer-name {
+    color: #2c3e50;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.organizer-affiliation {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
         .sponsors-section {
             background-color: white;
             padding: 3rem 0;
