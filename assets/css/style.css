@@ -341,5 +341,30 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+.program-day {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.plenary {
+    background-color: #f8f9fa;
+    border-left: 4px solid #e74c3c;
+    padding: 1rem;
+}
+
+.parallel-session {
+    border-left: 4px solid #3498db;
+    padding: 0 1rem;
+    margin: 1.5rem 0;
+}
+
+.presentation {
+    display: flex;
+    padding: 0.7rem 0;
+    border-bottom: 1px dashed #eee;
+}
 
 /* Toutes les autres règles CSS */
