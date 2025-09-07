@@ -155,7 +155,7 @@
             height: 300px;
             background-color: #ddd;
             border-radius: 8px;
-            background-image: url('/assets/img/essa.jpeg');
+            background-image: url('/mmsc/ICCDMS/assets/img/essa.jpeg');
             background-size: cover;
             background-position: center;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -366,5 +366,222 @@
     padding: 0.7rem 0;
     border-bottom: 1px dashed #eee;
 }
+/* Style de base */
+#registration-fees {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.fee-table {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.list-group-item {
+    padding: 1.25rem 1.5rem;
+    border-color: rgba(0,0,0,0.05);
+}
+
+.fee-category {
+    font-weight: 500;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5em 0.75em;
+}
+
+/* Icônes */
+.fa-li {
+    left: -2em;
+    width: 2em;
+    top: 0.3em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fee-category small {
+        display: inline !important;
+    }
+}
+/* Registration Fees Section Styling */
+#registration-fees .alert-info {
+    border-left: 4px solid #0dcaf0;
+    background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+}
+
+.bg-success.bg-opacity-10 {
+    border-left: 4px solid #198754;
+}
+
+.fee-category {
+    font-weight: 500;
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 0.6em 0.9em;
+    min-width: 80px;
+}
+
+/* Additional Information Styling */
+.additional-info {
+    border-left: 4px solid #3498db;
+}
+
+.fa-ul {
+    margin-left: 2rem;
+}
+
+.fa-li {
+    left: -2em;
+    width: 2em;
+    top: 0.3em;
+    color: #28a745;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .fee-category small {
+        font-size: 0.8rem;
+    }
+    
+    .badge {
+        font-size: 0.8rem;
+        padding: 0.5em 0.7em;
+        min-width: 70px;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Hover Effects */
+.fee-table .list-group-item:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
 /* Toutes les autres règles CSS */
+/* Abstract Submission Section Styling */
+#abstract-submission {
+    background-color: #f8f9fa;
+}
+
+/* Timeline styling */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #dee2e6;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-date {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-content {
+    padding-left: 2rem;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #3498db;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #3498db;
+}
+
+.timeline-content i {
+    margin-right: 0.5rem;
+}
+
+/* Steps list */
+.steps-list {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step-counter;
+}
+
+.steps-list li {
+    counter-increment: step-counter;
+    margin-bottom: 1.5rem;
+    padding-left: 3rem;
+    position: relative;
+}
+
+.steps-list li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.steps-list strong {
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.steps-list p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .steps-list li {
+        padding-left: 2.5rem;
+    }
+    
+    .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}

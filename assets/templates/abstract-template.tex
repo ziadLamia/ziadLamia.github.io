@@ -1,0 +1,139 @@
+\documentclass [12pt]{article}
+\usepackage{graphicx,amssymb,amsfonts,latexsym,amsmath,amsthm,times}
+\usepackage{epsfig}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage[english]{babel}
+\setlength{\textwidth}{6.5in} \textheight=8.5in \oddsidemargin 0in \topmargin -0.5 in
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+\numberwithin{equation}{section}
+
+%*******************************************************************
+% SPECIFY THE PAGE HEADERS THIS WAY: ON THE LEFT: FIRST AUTHOR et al., ON THE RIGHT: SHORT TITLE
+%*******************************************************************
+\pagestyle{fancy}
+
+
+
+%*******************************************************************
+% NECESSARY TO DEFINE IN ORDER TO GET AN AUTOMATIC NUMBERING OF THEOREMS, DEFINITIONS, ETC.
+%*******************************************************************
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+
+
+%*******************************************************************
+%NECESSARY TO OBTAIN THE SECTIONS, SUBSECTIONS, ETC. DEFINED AS 1.1., 2.1.3. FOR INSTANCE
+%*******************************************************************
+\renewcommand\thesection{\arabic{section}.}
+    \renewcommand\thesubsection{\thesection\arabic{subsection}.}
+       \renewcommand\thesubsubsection{\thesubsection\arabic{subsubsection}.}
+       \renewcommand\theequation{\thesection\arabic{equation}}
+
+\begin{document}
+
+%*******************************************************************
+%TITLE OF THE JOURNAL - NAME OF THE ISSUE AS WELL AS YEAR AND PAGE NUMBERS
+%*******************************************************************
+\begin{center}
+\footnotesize {
+
+\textit{\textbf{International Conference on Complex Dynamics: Modeling and Simulation.\\ Essaouira-Maroc, 25 -26 September 2025.}}
+}\\
+------------------------------------------------------------------------------
+\end{center}
+\thispagestyle{plain}
+
+%*******************************************************************
+%TITLE OF THE ARTICLE
+%*******************************************************************
+\vspace*{2cm} \normalsize \centerline{\Large \bf Title}
+
+\vspace*{1cm}
+%*******************************************************************
+%AUTHORS - THE CORRESPONDING AUTHOR NEEDS TO SPECIFY HIS/HER E-MAIL ADDRESS AS A FOOTNOTE
+%*******************************************************************
+
+\centerline{\bf \underline{First author} $^a$, author$^b$ and author $^c$
+ \footnote{Corresponding author. E-mail: }}
+\vspace*{0.5cm}
+
+%*******************************************************************
+%ADDRESS OF THE AUTHORS
+%*******************************************************************
+\centerline{$^a$ Address.}
+
+\centerline{$^b$ .}
+
+\centerline{$^c$ .}
+
+
+%*******************************************************************
+%ABSTRACT
+%*******************************************************************
+
+
+\vspace*{1cm}
+
+\noindent {\bf Abstract.}
+    In the present paper,
+
+\vspace*{0.5cm}
+
+%*******************************************************************
+%KEYWORDS
+%*******************************************************************
+\noindent {\bf Key words:}.
+
+
+%*******************************************************************
+%AMS SUBJECT CLASSIFICATION
+%*******************************************************************
+\noindent {\bf AMS subject classification:} .
+%*******************************************************************
+%DO NOT FORGET TO RESET THE EQUATION COUNTER TO 0 AT THE HEAD OF EACH SECTION
+%*******************************************************************
+%\setcounter{equation}{0}
+%\section{Introduction}
+%Let consider the multiobjective program defined by
+%
+%
+%
+%\setcounter{equation}{0}
+%\section{Numerical Results}
+%%*******************************************************************
+%We consider a simple
+%
+%\section{Conclusion}
+%Both algorithms yield
+%
+
+%*******************************************************************
+%BIBLIOGRAPHY
+%*******************************************************************
+\begin{thebibliography}{99}
+
+\bibitem{a}
+Geddes, K.O., Czapor, S.R., Labahn, G.: \textit{Algorithms for Computer Algebra Kluwer, Boston (1992)}
+\end{thebibliography}
+\end{document}
