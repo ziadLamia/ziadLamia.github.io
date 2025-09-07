@@ -585,3 +585,43 @@
         font-size: 1rem;
     }
 }
+/* Beamer Download Section Styling */
+.beamer-download-section {
+    border-left: 4px solid #17a2b8;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.beamer-download-section h5 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.beamer-download-section .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.beamer-download-section .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Responsive Design for Beamer Section */
+@media (max-width: 768px) {
+    .beamer-download-section .row {
+        text-align: center;
+    }
+    
+    .beamer-download-section .col-md-8 {
+        margin-bottom: 1rem;
+    }
+    
+    .beamer-download-section .col-md-4 {
+        text-align: center !important;
+    }
+    
+    .beamer-download-section .btn {
+        width: 100%;
+    }
+}
