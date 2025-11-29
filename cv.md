@@ -1,2 +1,9 @@
-# CV
-[Télécharger le CV](assets/cv.pdf)
+---
+layout: page
+title: "CV"
+---
+
+# 📄 Curriculum Vitae
+
+Télécharger le CV :  
+👉 [Cliquez ici](assets/cv.pdf)
