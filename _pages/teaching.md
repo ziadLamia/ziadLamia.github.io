@@ -51,8 +51,8 @@ author_profile: true
   <li>📄 <strong>Supports disponibles</strong></li>
   <ul>
     <li>📘 <a href="/assets/cours/bd/Cours_SQL_Oracle.pdf">Cours SQL Oracle</a></li>
-    <li>📘 <a href="/assets/cours/bd/Cours_SQL_Outils.pdf">Cours Outils BD</a></li>
-    <li>📘 <a href="/assets/cours/bd/Cours_SQL_IDSD.pdf">Cours BD Avancées</a></li>
+    <li>📘 <a href="/assets/cours/bd/Cours_SQL_Outils.pdf">Cours Outils de développement</a></li>
+    <li>📘 <a href="/assets/cours/bd/Cours_SQL_IDSD.pdf">Cours BD Avancées — Science des Données</a></li>
     <li>📘 <a href="/assets/cours/bd/Cours_PLSQL.pdf">Cours PL/SQL</a></li>
 
     <li>📄 <a href="/assets/cours/bd/TD1_SQL.pdf">TD 1</a></li>
@@ -62,7 +62,6 @@ author_profile: true
     <li>🧪 <a href="/assets/cours/bd/TP1_SQL.pdf">TP 1</a></li>
     <li>🧪 <a href="/assets/cours/bd/TP2_SQL.pdf">TP 2</a></li>
     <li>🧪 <a href="/assets/cours/bd/TP3_SQL.pdf">TP 3</a></li>
-    <li>🧪 <a href="/assets/cours/bd/TP4_SQL.pdf">TP 4</a></li>
     <li>🧪 <a href="/assets/cours/bd/TP1_PLSQL.pdf">TP PL/SQL</a></li>
   </ul>
 </ul>
@@ -87,7 +86,7 @@ author_profile: true
 
   <li>📄 <strong>Supports disponibles</strong></li>
   <ul>
-    <li>📘 <a href="/assets/cours/bdMng/Cours_NoSQL.pdf">Cours complet</a></li>
+    <li>📘 <a href="/assets/cours/bdMng/Cours_NoSQL.pdf">Cours MongoDB -- NoSQL</a></li>
 
     <li>📄 <a href="/assets/cours/bdMng/TD1_MongoDB.pdf">TD 1</a></li>
 
@@ -148,6 +147,7 @@ author_profile: true
   <li>📄 <strong>Supports disponibles</strong></li>
   <ul>
     <li>📘 <a href="/assets/cours/kotlin/Cours_Kotlin.pdf">Cours Kotlin</a></li>
+    <li>📘 <a href="/assets/cours/kotlin/devMob.pdf">Cours Développement Mobile</a></li>
 
     <li>🧪 <a href="/assets/cours/kotlin/TP1_Kotlin.pdf">TP 1 — Kotlin</a></li>
     <li>🧪 <a href="/assets/cours/kotlin/TP2_Kotlin.pdf">TP 2 — Kotlin</a></li>
