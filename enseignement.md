@@ -3,10 +3,10 @@ layout: page
 title: "Enseignement"
 ---
 
-# 📚 Cours enseignés
+# 📚 Cours Enseignés
 
 Bienvenue sur la page dédiée à mes enseignements à l’École Supérieure de Technologie d’Essaouira.  
-Vous trouverez ici les supports de cours, TD et TP téléchargeables.
+Vous trouverez ici les supports de **cours**, **TD** et **TP** téléchargeables.
 
 ---
 
@@ -19,14 +19,16 @@ Vous trouverez ici les supports de cours, TD et TP téléchargeables.
 - Configuration Cisco (Switch / Routeur)
 
 ### 📄 Supports disponibles
-- **Cours complet  **  
-  👉 [Télécharger](assets/cours/reseaux/Cours_Reseaux.pdf)
-- **TD Réseaux  **  
+- **Cours complet**  
+  👉 [Cours Réseaux](assets/cours/reseaux/Cours_Reseaux.pdf)
+
+- **Travaux Dirigés (TD)**  
   👉 [TD 1](assets/cours/reseaux/TD1_Reseaux.pdf)  
   👉 [TD 2](assets/cours/reseaux/TD2_Reseaux.pdf)
-- **TP Packet Tracer  **  
+
+- **Travaux Pratiques (TP) — Packet Tracer**  
   👉 [TP 1](assets/cours/reseaux/TP1_Reseaux.pdf)  
-  👉 [TP 2](assets/cours/reseaux/TP2_Reseaux.pdf)
+  👉 [TP 2](assets/cours/reseaux/TP2_Reseaux.pdf)  
   👉 [TP 3](assets/cours/reseaux/TP3_Reseaux.pdf)
 
 ---
@@ -34,32 +36,38 @@ Vous trouverez ici les supports de cours, TD et TP téléchargeables.
 # 🔹 Bases de Données (SQL / Oracle / PL/SQL)
 
 ### 📘 Contenu du module
-- SQL : SELECT, JOIN, Group By  
+- SQL : SELECT, JOIN, GROUP BY  
 - Fonctions SQL  
-- PL/SQL : procédures, fonctions  
-- Contraintes & modèles relationnels
+- Modèle relationnel et contraintes  
+- PL/SQL : procédures, fonctions
 
 ### 📄 Supports disponibles
 - **Cours SQL Oracle**  
   👉 [Cours Complet](assets/cours/bd/Cours_SQL_Oracle.pdf)
-- **Outils de développement des Bases de données**  
-  👉 [Cours Complet](assets/cours/bd/Cours_SQL_Outils.pdf)
-- **Cours de Base de Données Avancées pour la Science de Données**  
-  👉 [Cours Complet](assets/cours/bd/Cours_SQL_IDSD.pdf)
-  - **Cours PL/SQL**  
-  👉 [Cours Complet](assets/cours/bd/Cours_PLSQL.pdf)
-- **TD SQL  **  
+
+- **Outils de développement**  
+  👉 [Cours Outils BD](assets/cours/bd/Cours_SQL_Outils.pdf)
+
+- **Cours BD Avancées — Science des Données**  
+  👉 [Cours Avancé](assets/cours/bd/Cours_SQL_IDSD.pdf)
+
+- **Cours PL/SQL**  
+  👉 [Cours PL/SQL](assets/cours/bd/Cours_PLSQL.pdf)
+
+- **Travaux Dirigés (TD)**  
   👉 [TD 1](assets/cours/bd/TD1_SQL.pdf)  
-  👉 [TD 2](assets/cours/bd/TD2_SQL.pdf)
+  👉 [TD 2](assets/cours/bd/TD2_SQL.pdf)  
   👉 [TD 3](assets/cours/bd/TD3_SQL.pdf)
-- **TP SQL & PL/SQL  **  
+
+- **Travaux Pratiques (TP)**  
   👉 [TP 1](assets/cours/bd/TP1_SQL.pdf)  
-  👉 [TP 2](assets/cours/bd/TP2_SQL.pdf)
-  👉 [TP 3](assets/cours/bd/TP3_SQL.pdf)
-  👉 [TP 4](assets/cours/bd/TP4_SQL.pdf)
+  👉 [TP 2](assets/cours/bd/TP2_SQL.pdf)  
+  👉 [TP 3](assets/cours/bd/TP3_SQL.pdf)  
+  👉 [TP 4](assets/cours/bd/TP4_SQL.pdf)  
   👉 [TP PL/SQL](assets/cours/bd/TP1_PLSQL.pdf)
-  
+
 ---
+
 # 🔹 Bases de Données Non Relationnelles (MongoDB)
 
 ### 📘 Contenu du module
@@ -67,84 +75,84 @@ Vous trouverez ici les supports de cours, TD et TP téléchargeables.
 - Modèle orienté documents  
 - Collections & documents  
 - Schémas flexibles  
-- Opérations CRUD (Create, Read, Update, Delete)  
-- Agrégations (Pipeline)  
-- Import/export de données   
-
----
+- Opérations CRUD  
+- Pipeline d’agrégation  
+- Import/export de données
 
 ### 📄 Supports disponibles
+- **Cours MongoDB / NoSQL**  
+  👉 [Cours Complet](assets/cours/bdMng/Cours_NoSQL.pdf)
 
-#### 📘 Cours MongoDB / NoSQL
-👉 [Cours complet](assets/cours/bdMng/Cours_NoSQL.pdf)
+- **Travaux Dirigés (TD)**  
+  👉 [TD 1](assets/cours/bdMng/TD1_MongoDB.pdf)
 
-#### 📘 Travaux Dirigés (TD)
-👉 [TD 1](assets/cours/bdMng/TD1_MongoDB.pdf)  
-
-#### 📘 Travaux Pratiques (TP)
-👉 [TP 1](assets/cours/bdMng/TP1_MongoDB.pdf)  
-👉 [TP 2](assets/cours/bdMng/TP2_MongoDB.pdf)
-👉 [TP 3](assets/cours/bdMng/TP2_MongoDB.pdf)
-👉 [TP 4](assets/cours/bdMng/TP2_MongoDB.pdf)
+- **Travaux Pratiques (TP)**  
+  👉 [TP 1](assets/cours/bdMng/TP1_MongoDB.pdf)  
+  👉 [TP 2](assets/cours/bdMng/TP2_MongoDB.pdf)  
+  👉 [TP 3](assets/cours/bdMng/TP3_MongoDB.pdf)  
+  👉 [TP 4](assets/cours/bdMng/TP4_MongoDB.pdf)
 
 ---
 
-# 🔹 Programmation en Environnement 
+# 🔹 Programmation en Environnement (Algorithmique & R)
 
 ### 📘 Contenu du module
-- Algorithmique 
-- Language R 
+- Algorithmique  
+- Introduction au langage R  
+- Visualisation & statistiques  
 - Modélisation environnementale  
 - Analyses écologiques
 
 ### 📄 Supports disponibles
-- **Cours Algorithmique  **  
-  👉 [Cours R](assets/cours/r/Cours_Algo.pdf)
-- **Cours R  **  
+- **Cours Algorithmique**  
+  👉 [Cours Algo](assets/cours/r/Cours_Algo.pdf)
+
+- **Cours R**  
   👉 [Cours R](assets/cours/r/Cours_R.pdf)
-- **TP R  **  
-  👉 [TP1](assets/cours/r/TP1_Algo.pdf)  
-  👉 [TP2](assets/cours/r/TP2_Algo.pdf)
-- **TP R (ZIP)**  
-  👉 [TP1](assets/cours/r/TP1_R.pdf)  
-  👉 [TP2](assets/cours/r/TP2_R.pdf)
+
+- **Travaux Pratiques (TP)**  
+  👉 [TP 1 — Algorithmique](assets/cours/r/TP1_Algo.pdf)  
+  👉 [TP 2 — Algorithmique](assets/cours/r/TP2_Algo.pdf)
+
+- **TP R**  
+  👉 [TP 1](assets/cours/r/TP1_R.pdf)  
+  👉 [TP 2](assets/cours/r/TP2_R.pdf)
 
 ---
 
 # 🔹 Développement Mobile (Kotlin & Jetpack Compose)
 
 ### 📘 Contenu du module
-- Kotlin syntaxe  
-- Programmation orientée objet  
+- Syntaxe Kotlin  
+- POO & Classes  
 - Jetpack Compose  
 - Architecture MVVM  
-- Projet mobile Android
+- Projet Android complet
 
 ### 📄 Supports disponibles
-- **Cours Kotlin  **  
+- **Cours Kotlin**  
   👉 [Cours Kotlin](assets/cours/kotlin/Cours_Kotlin.pdf)
-- **TP Kotlin  **  
+
+- **Travaux Pratiques Kotlin**  
   👉 [TP 1](assets/cours/kotlin/TP1_Kotlin.pdf)  
   👉 [TP 2](assets/cours/kotlin/TP2_Kotlin.pdf)
-- **TP Développement Mobile  **  
+
+- **TP Développement Mobile**  
   👉 [TP 1](assets/cours/kotlin/TP1_Mob.pdf)  
-  👉 [TP 2](assets/cours/kotlin/TP2_Mob.pdf)
+  👉 [TP 2](assets/cours/kotlin/TP2_Mob.pdf)  
   👉 [TP 3](assets/cours/kotlin/TP3_Mob.pdf)
 
 ---
 
-
-# 🎓 Formations organisées
+# 🎓 Formations Organisées
 
 | Formation | Date | Technologies | Intervenants | Organisateur |
 |-----------|------|--------------|--------------|--------------|
-| **Formation Full Stack Spring/React** | 11 Mars 2023 | Spring Boot, React, Déploiement | Zakaria Dani, Aymane Daif | Département Mathématiques-Informatique |
-| **Formation DevOps & Salesforce** | 18 Mars 2023 | Salesforce, Spring, Docker, CI/CD | Mr. Elquandili, Mr. Ssanhaji, Mr. Elaasri, Mr. Ennouri | Département Mathématiques-Informatique |
-| **Formation Angular** | 30 Mars 2019 | Angular | Youness Houddas, Chemseddine El Garrai | Club ISIL de l'EST Essaouira |
+| **Formation Full Stack Spring/React** | 11 Mars 2023 | Spring Boot, React | Zakaria Dani, Aymane Daif | Département Math-Info |
+| **Formation DevOps & Salesforce** | 18 Mars 2023 | Salesforce, Docker, CI/CD | Elquandili, Ssanhaji, Elaasri, Ennouri | Département Math-Info |
+| **Formation Angular** | 30 Mars 2019 | Angular | Youness Houddas, Chemseddine El Garrai | Club ISIL |
 
-
-**Lieu** : Amphithéâtre de l'EST Essaouira  
-**Organisateurs** : F. Karami & L. Ziad
+**Lieu :** Amphithéâtre de l’EST Essaouira  
+**Organisateurs :** F. Karami & L. Ziad
 
 ---
-
