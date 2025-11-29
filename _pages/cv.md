@@ -75,13 +75,6 @@ redirect_from:
     <li>Développement Mobile – Kotlin & Jetpack Compose</li>
   </ul>
 
-  <h4>⏱️ Volume horaire (extraits)</h4>
-  <ul>
-    <li>Réseaux informatiques : 60h (2018/19) → 86h (2023/24, 2024/25)</li>
-    <li>Outils BD : 68h (2018/19), 50h (2024/25)</li>
-    <li>BD NoSQL : jusqu’à 76h (2022/2023)</li>
-    <li>Développement Mobile : 72h (2023/24 – 2024/25)</li>
-  </ul>
 </details>
 
 ---
@@ -133,9 +126,12 @@ redirect_from:
     <ul>
       <li>Création de la filière <em>Informatique Décisionnelle & Science de Données</em></li>
       <li>Mise à jour de la filière <em>Génie Informatique</em></li>
+      <li>Mise à jour de la filière <em>Licence Professionnelle ISIL</em></li>
     </ul>
-    <li>Participation aux jurys de recrutement</li>
+    <li>Coordonnatrice de la commission INTERFACE DEPARTEMENT- ENTREPRISE : IDE depuis 2021</li>
     <li>Co-organisation de formations et ateliers techniques</li>
+    
+
   </ul>
 </details>
 
