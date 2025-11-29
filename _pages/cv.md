@@ -128,8 +128,8 @@ redirect_from:
       <li>Mise à jour de la filière <em>Génie Informatique</em></li>
       <li>Mise à jour de la filière <em>Licence Professionnelle ISIL</em></li>
     </ul>
-    <li>Coordonnatrice de la commission INTERFACE DEPARTEMENT- ENTREPRISE : IDE depuis 2021</li>
-    <li>Co-organisation de formations et ateliers techniques</li>
+    <li>s<strong>Coordonnatrice de la commission INTERFACE DEPARTEMENT- ENTREPRISE : IDE<em> depuis 2021<\em></li>
+    <li><strong>Co-organisation de formations et ateliers techniques</li>
     
 
   </ul>
