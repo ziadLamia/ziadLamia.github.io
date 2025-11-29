@@ -5,31 +5,50 @@ title: "Accueil"
 
 # Dr. Lamia Ziad  
 **Enseignante-Chercheuse — Informatique & Mathématiques Appliquées**  
-**EST Essaouira (Université Cadi Ayyad)**
+**École Supérieure de Technologie d'Essaouira**  
+**Université Cadi Ayyad**
+
+---
+
+## 🌐 Navigation du site
+
+➡️ [Enseignement](enseignement.html)  
+➡️ [Recherche](recherche.html)  
+➡️ [Encadrement PFE](pfe.html)  
+➡️ [Contact](contact.html)  
+➡️ [CV PDF](assets/cv.pdf)
 
 ---
 
 ## 🎓 Profil
+
 Spécialisée en :
-- Traitement d’images
-- Modèles non locaux & EDP
-- Restauration du bruit multiplicatif
-- ADMM, AOS, modèles variationnels
-- Machine learning appliqué à l’imagerie
+- Traitement et restauration d’images
+- Modèles non locaux (NLTV, NLM, patch-based)
+- Équations aux dérivées partielles (EDP)
+- Restauration du bruit multiplicatif (SAR)
+- Méthodes variationnelles & optimisation (ADMM, AOS)
+- Deep Image Prior & méthodes non supervisées
 
 ---
 
 ## 🔬 Centres d’intérêt
-- Restauration d'images SAR  
-- Modèles p-laplaciens non linéaires  
-- Deep Image Prior & méthodes d’apprentissage non supervisées  
-- Modélisation numérique & optimisation  
+
+- Imagerie SAR & télédétection  
+- p-Laplaciens non linéaires et régularisations adaptatives  
+- Reconstruction d’images par ADMM & modèles hybrides  
+- Apprentissage profond et inverse problems  
+- Modélisation numérique en traitement du signal  
 
 ---
 
 ## 🔗 Liens rapides
-- 📘 [Google Scholar](#)
-- 🐙 [GitHub](#)
-- 💼 [LinkedIn](#)
-- 📄 [CV PDF](assets/cv.pdf)
 
+- 📘 **Google Scholar** — [Lien](#)  
+- 🐙 **GitHub** — [Lien](#)  
+- 💼 **LinkedIn** — [Lien](#)  
+- 📄 **CV (PDF)** — [Télécharger](assets/cv.pdf)
+
+---
+
+Merci de votre visite. N’hésitez pas à explorer les différentes sections du site.

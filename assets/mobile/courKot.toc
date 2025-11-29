@@ -1,0 +1,35 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Introduction à Kotlin}{2}%
+\contentsline {subsection}{\numberline {1.1}Qu'est-ce que Kotlin ?}{2}%
+\contentsline {subsection}{\numberline {1.2}Configuration de l'environnement}{2}%
+\contentsline {section}{\numberline {2}Les Bases de Kotlin}{2}%
+\contentsline {subsection}{\numberline {2.1}Hello World}{2}%
+\contentsline {subsection}{\numberline {2.2}Variables et Types}{2}%
+\contentsline {subsection}{\numberline {2.3}Null Safety}{3}%
+\contentsline {section}{\numberline {3}Structures de Contrôle}{3}%
+\contentsline {subsection}{\numberline {3.1}Conditions}{3}%
+\contentsline {subsection}{\numberline {3.2}When (switch amélioré)}{3}%
+\contentsline {section}{\numberline {4}Fonctions}{4}%
+\contentsline {subsection}{\numberline {4.1}Déclaration de fonctions}{4}%
+\contentsline {subsection}{\numberline {4.2}Fonctions d'extension}{4}%
+\contentsline {section}{\numberline {5}Collections}{4}%
+\contentsline {subsection}{\numberline {5.1}Listes}{4}%
+\contentsline {subsection}{\numberline {5.2}Tableaux et Maps}{4}%
+\contentsline {section}{\numberline {6}Programmation Orientée Objet}{5}%
+\contentsline {subsection}{\numberline {6.1}Classes et Objets}{5}%
+\contentsline {subsection}{\numberline {6.2}Propriétés et Getters/Setters}{5}%
+\contentsline {subsection}{\numberline {6.3}Héritage}{5}%
+\contentsline {section}{\numberline {7}Programmation Fonctionnelle}{6}%
+\contentsline {subsection}{\numberline {7.1}Lambdas et Fonctions d'ordre supérieur}{6}%
+\contentsline {subsection}{\numberline {7.2}Scope Functions}{6}%
+\contentsline {section}{\numberline {8}Coroutines (Programmation Asynchrone)}{6}%
+\contentsline {subsection}{\numberline {8.1}Introduction aux Coroutines}{6}%
+\contentsline {subsection}{\numberline {8.2}Parallélisme avec les Coroutines}{7}%
+\contentsline {section}{\numberline {9}Exercices Pratiques}{7}%
+\contentsline {subsection}{\numberline {9.1}Exercice 1 : Calculatrice}{7}%
+\contentsline {subsection}{\numberline {9.2}Exercice 2 : Gestion d'étudiants}{7}%
+\contentsline {subsection}{\numberline {9.3}Exercice 3 : API Simulée}{8}%
+\contentsline {section}{\numberline {10}Bonnes Pratiques}{8}%
+\contentsline {subsection}{\numberline {10.1}Conseils de Développement}{8}%
+\contentsline {subsection}{\numberline {10.2}Motifs de Conception Courants}{8}%
+\contentsline {section}{\numberline {11}Annexe : Cheatsheet Rapide}{9}%

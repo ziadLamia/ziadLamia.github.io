@@ -1,0 +1,74 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\geometry{margin=2.2cm}
+
+% STYLE CODE
+\definecolor{kotlinBlue}{RGB}{47,91,164}
+\definecolor{lightgray}{rgb}{0.95,0.95,0.95}
+\lstdefinestyle{KotlinStyle}{
+    backgroundcolor=\color{lightgray},
+    keywordstyle=\color{kotlinBlue}\bfseries,
+    basicstyle=\ttfamily\footnotesize,
+    frame=single,
+    breaklines=true
+}
+
+\title{\textbf{TP 1 — Introduction à Kotlin et Jetpack Compose}}
+\author{Pr. Lamia ZIAD}
+\date{EST Essaouira}
+
+\begin{document}
+\maketitle
+
+\section*{Objectifs}
+\begin{itemize}
+    \item Installer Android Studio ;
+    \item Créer son premier projet Compose ;
+    \item Comprendre les Composables et le State ;
+    \item Manipuler Text, Button, Column.
+\end{itemize}
+
+\section*{Exercice 1 — Création du premier écran}
+Créer une application Jetpack Compose qui affiche un texte \textbf{“Bienvenue dans Kotlin Mobile”}.  
+Utiliser un composable \texttt{@Composable fun Accueil()}.
+
+\section*{Exercice 2 — Compteur interactif}
+Ajouter :
+\begin{itemize}
+    \item un compteur numérique ;
+    \item un bouton “Incrémenter” ;
+    \item un bouton “Réinitialiser”.
+\end{itemize}
+
+\textbf{Exemple :}
+\begin{lstlisting}[style=KotlinStyle]
+@Composable
+fun Compteur() {
+    var count by remember { mutableStateOf(0) }
+
+    Column {
+        Text("Compteur = $count")
+        Button(onClick = { count++ }) {
+            Text("Incrementer")
+        }
+        Button(onClick = { count = 0 }) {
+            Text("Reset")
+        }
+    }
+}
+\end{lstlisting}
+
+\section*{Travail à Rendre}
+\begin{itemize}
+    \item Capture d’écran du compteur ;
+    \item Code complet du composable ;
+    \item Explication du fonctionnement de \texttt{remember} et \texttt{mutableStateOf}.
+\end{itemize}
+
+\end{document}

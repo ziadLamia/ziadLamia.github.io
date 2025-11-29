@@ -25,8 +25,9 @@ Vous trouverez ici les supports de cours, TD et TP téléchargeables.
   👉 [TD 1](assets/cours/reseaux/TD1_Reseaux.pdf)  
   👉 [TD 2](assets/cours/reseaux/TD2_Reseaux.pdf)
 - **TP Packet Tracer  **  
-  👉 [TP1 - Config Switch](assets/cours/reseaux/TP1_Switch.pdf)  
-  👉 [TP2 - Routage IP](assets/cours/reseaux/TP2_Routage.pdf)
+  👉 [TP 1](assets/cours/reseaux/TP1_Reseaux.pdf)  
+  👉 [TP 2](assets/cours/reseaux/TP2_Reseaux.pdf)
+  👉 [TP 3](assets/cours/reseaux/TP3_Reseaux.pdf)
 
 ---
 

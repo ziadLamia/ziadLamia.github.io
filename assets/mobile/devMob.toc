@@ -1,0 +1,36 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Introduction à Jetpack Compose}{2}%
+\contentsline {subsection}{\numberline {1.1}Qu'est-ce que Jetpack Compose ?}{2}%
+\contentsline {subsection}{\numberline {1.2}Configuration de l'environnement}{2}%
+\contentsline {section}{\numberline {2}Premiers Pas avec Compose}{2}%
+\contentsline {subsection}{\numberline {2.1}Structure de base}{2}%
+\contentsline {subsection}{\numberline {2.2}Composants de base}{3}%
+\contentsline {section}{\numberline {3}Gestion d'État dans Compose}{3}%
+\contentsline {subsection}{\numberline {3.1}State et Recomposition}{3}%
+\contentsline {subsection}{\numberline {3.2}State Hoisting}{4}%
+\contentsline {section}{\numberline {4}Layout et Modifiers}{4}%
+\contentsline {subsection}{\numberline {4.1}Layouts principaux}{4}%
+\contentsline {subsection}{\numberline {4.2}Modifiers courants}{5}%
+\contentsline {section}{\numberline {5}Listes et Grids}{5}%
+\contentsline {subsection}{\numberline {5.1}LazyColumn - Liste défilante}{5}%
+\contentsline {subsection}{\numberline {5.2}LazyVerticalGrid}{6}%
+\contentsline {section}{\numberline {6}Navigation avec Compose}{6}%
+\contentsline {subsection}{\numberline {6.1}Configuration de la navigation}{6}%
+\contentsline {subsection}{\numberline {6.2}Écrans et navigation}{7}%
+\contentsline {section}{\numberline {7}Architecture MVVM avec Compose}{8}%
+\contentsline {subsection}{\numberline {7.1}ViewModel et State}{8}%
+\contentsline {subsection}{\numberline {7.2}Utilisation dans Compose}{8}%
+\contentsline {section}{\numberline {8}Thèmes et Material Design 3}{9}%
+\contentsline {subsection}{\numberline {8.1}Configuration du thème}{9}%
+\contentsline {section}{\numberline {9}Accès aux Données}{9}%
+\contentsline {subsection}{\numberline {9.1}Room Database}{9}%
+\contentsline {subsection}{\numberline {9.2}Intégration avec Compose}{10}%
+\contentsline {section}{\numberline {10}Projet Pratique : Application Todo}{11}%
+\contentsline {subsection}{\numberline {10.1}Structure complète}{11}%
+\contentsline {subsection}{\numberline {10.2}Écran de liste des tâches}{11}%
+\contentsline {section}{\numberline {11}Testing avec Compose}{12}%
+\contentsline {subsection}{\numberline {11.1}Tests UI}{12}%
+\contentsline {section}{\numberline {12}Performance et Bonnes Pratiques}{13}%
+\contentsline {subsection}{\numberline {12.1}Optimisations}{13}%
+\contentsline {subsection}{\numberline {12.2}Composable Previews}{13}%
+\contentsline {section}{\numberline {13}Annexe : Cheatsheet Compose}{13}%

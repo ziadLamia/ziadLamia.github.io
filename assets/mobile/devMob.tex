@@ -1,0 +1,762 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+
+\geometry{margin=2cm}
+
+\definecolor{ESTblue}{RGB}{0,70,140}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{androidgreen}{rgb}{0.32,0.67,0.28}
+
+\lstdefinestyle{kotlinstyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    frame=single,
+    language=Java
+}
+\makeatletter
+\def\maketitle{\begin{titlepage}
+		\centering
+		\vspace*{2cm}
+		\includegraphics[width=8cm]{logo.png}\\[3cm]
+		{\Huge\bfseries\textcolor{ESTblue}{DUT : Génie Informatique}}\\[0.5cm]
+		{\Large\bfseries Cours de Développement Mobile avec Kotlin et Jetpack Compose}\\[0.5cm]
+		{\large Pr. Lamia ZIAD}\\
+		{\large École Supérieure de Technologie d'Essaouira}\\[1cm]
+		\vfill
+	\end{titlepage}
+}
+\makeatother
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction à Jetpack Compose}
+
+\subsection{Qu'est-ce que Jetpack Compose ?}
+Jetpack Compose est le toolkit moderne de Google pour créer des interfaces utilisateur natives sur Android. Il utilise une approche déclarative avec Kotlin.
+
+\textbf{Avantages :}
+\begin{itemize}
+\item \textbf{Déclaratif} : Décrivez ce que vous voulez, pas comment le faire
+\item \textbf{Concis} : Moins de code que XML
+\item \textbf{Intuitif} : Code Kotlin pur
+\item \textbf{Compatibilité} : Fonctionne avec les vues existantes
+\end{itemize}
+
+\subsection{Configuration de l'environnement}
+\begin{lstlisting}[style=kotlinstyle]
+// build.gradle.kts (Module app)
+android {
+    buildFeatures {
+        compose = true
+    }
+    
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.4"
+    }
+}
+
+dependencies {
+    implementation("androidx.compose.ui:ui:1.5.4")
+    implementation("androidx.compose.material3:material3:1.1.2")
+    implementation("androidx.activity:activity-compose:1.7.2")
+}
+\end{lstlisting}
+
+\section{Premiers Pas avec Compose}
+
+\subsection{Structure de base}
+\begin{lstlisting}[style=kotlinstyle]
+// MainActivity.kt
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            MyAppTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    Greeting("Android")
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
+}
+\end{lstlisting}
+
+\subsection{Composants de base}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun BasicComponents() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
+        // Texte
+        Text(
+            text = "Bonjour Compose!",
+            style = MaterialTheme.typography.headlineMedium
+        )
+        
+        Spacer(modifier = Modifier.height(16.dp))
+        
+        // Bouton
+        Button(
+            onClick = { /* Action */ }
+        ) {
+            Text("Cliquez-moi")
+        }
+        
+        // Champ de texte
+        var text by remember { mutableStateOf("") }
+        TextField(
+            value = text,
+            onValueChange = { text = it },
+            label = { Text("Entrez du texte") }
+        )
+    }
+}
+\end{lstlisting}
+
+\section{Gestion d'État dans Compose}
+
+\subsection{State et Recomposition}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun Counter() {
+    // State avec remember
+    var count by remember { mutableStateOf(0) }
+    
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = "Compteur: $count",
+            style = MaterialTheme.typography.headlineMedium
+        )
+        
+        Button(
+            onClick = { count++ }
+        ) {
+            Text("Incrementer")
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{State Hoisting}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun CounterScreen() {
+    var count by remember { mutableStateOf(0) }
+    
+    Counter(
+        count = count,
+        onIncrement = { count++ },
+        onDecrement = { count-- }
+    )
+}
+
+@Composable
+fun Counter(
+    count: Int,
+    onIncrement: () -> Unit,
+    onDecrement: () -> Unit
+) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Button(onClick = onDecrement) {
+            Text("-")
+        }
+        
+        Text(
+            text = "$count",
+            modifier = Modifier.padding(16.dp)
+        )
+        
+        Button(onClick = onIncrement) {
+            Text("+")
+        }
+    }
+}
+\end{lstlisting}
+
+\section{Layout et Modifiers}
+
+\subsection{Layouts principaux}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun LayoutExamples() {
+    // Column - disposition verticale
+    Column {
+        Text("Element 1")
+        Text("Element 2")
+        Text("Element 3")
+    }
+    
+    // Row - disposition horizontale
+    Row {
+        Text("Element A")
+        Text("Element B")
+        Text("Element C")
+    }
+    
+    // Box - superposition
+    Box(
+        contentAlignment = Alignment.Center
+    ) {
+        Image(
+            painter = painterResource(R.drawable.background),
+            contentDescription = null
+        )
+        Text("Texte superpose")
+    }
+}
+\end{lstlisting}
+
+\subsection{Modifiers courants}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun ModifierExamples() {
+    Text(
+        text = "Texte stylise",
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp)
+            .background(Color.Blue)
+            .clip(RoundedCornerShape(8.dp))
+            .border(1.dp, Color.Black)
+            .clickable { /* Click action */ }
+    )
+}
+\end{lstlisting}
+
+\section{Listes et Grids}
+
+\subsection{LazyColumn - Liste défilante}
+\begin{lstlisting}[style=kotlinstyle]
+data class Item(val id: Int, val name: String)
+
+@Composable
+fun ItemList(items: List<Item>) {
+    LazyColumn {
+        items(items) { item ->
+            ItemRow(item = item)
+        }
+    }
+}
+
+@Composable
+fun ItemRow(item: Item) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(8.dp),
+        elevation = CardDefaults.cardElevation(4.dp)
+    ) {
+        Row(
+            modifier = Modifier.padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = item.name,
+                style = MaterialTheme.typography.bodyLarge,
+                modifier = Modifier.weight(1f)
+            )
+            Icon(
+                imageVector = Icons.Default.ArrowForward,
+                contentDescription = null
+            )
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{LazyVerticalGrid}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun PhotoGrid(photos: List<Photo>) {
+    LazyVerticalGrid(
+        columns = GridCells.Adaptive(minSize = 128.dp)
+    ) {
+        items(photos) { photo ->
+            Image(
+                painter = rememberImagePainter(photo.url),
+                contentDescription = null,
+                modifier = Modifier
+                    .aspectRatio(1f)
+                    .padding(4.dp)
+                    .clip(RoundedCornerShape(8.dp))
+            )
+        }
+    }
+}
+\end{lstlisting}
+
+\section{Navigation avec Compose}
+
+\subsection{Configuration de la navigation}
+\begin{lstlisting}[style=kotlinstyle]
+// build.gradle.kts
+dependencies {
+    implementation("androidx.navigation:navigation-compose:2.7.0")
+}
+
+// Navigation graph
+@Composable
+fun MyApp() {
+    val navController = rememberNavController()
+    
+    NavHost(
+        navController = navController,
+        startDestination = "home"
+    ) {
+        composable("home") {
+            HomeScreen(
+                onNavigateToProfile = { 
+                    navController.navigate("profile") 
+                }
+            )
+        }
+        composable("profile") {
+            ProfileScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{Écrans et navigation}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun HomeScreen(onNavigateToProfile: () -> Unit) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text("Page d'accueil")
+        
+        Button(
+            onClick = onNavigateToProfile
+        ) {
+            Text("Voir le profil")
+        }
+    }
+}
+
+@Composable
+fun ProfileScreen(onBack: () -> Unit) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(16.dp)
+    ) {
+        IconButton(onClick = onBack) {
+            Icon(Icons.Default.ArrowBack, "Retour")
+        }
+        
+        Text("Profil utilisateur")
+    }
+}
+\end{lstlisting}
+
+\section{Architecture MVVM avec Compose}
+
+\subsection{ViewModel et State}
+\begin{lstlisting}[style=kotlinstyle]
+// ViewModel
+class UserViewModel : ViewModel() {
+    private val _userState = mutableStateOf(UserState())
+    val userState: State<UserState> = _userState
+    
+    fun loadUser(userId: String) {
+        viewModelScope.launch {
+            _userState.value = _userState.value.copy(
+                isLoading = true
+            )
+            
+            try {
+                val user = userRepository.getUser(userId)
+                _userState.value = _userState.value.copy(
+                    user = user,
+                    isLoading = false
+                )
+            } catch (e: Exception) {
+                _userState.value = _userState.value.copy(
+                    error = e.message,
+                    isLoading = false
+                )
+            }
+        }
+    }
+}
+
+data class UserState(
+    val user: User? = null,
+    val isLoading: Boolean = false,
+    val error: String? = null
+)
+\end{lstlisting}
+
+\subsection{Utilisation dans Compose}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun UserProfileScreen(
+    viewModel: UserViewModel = hiltViewModel()
+) {
+    val state by viewModel.userState.collectAsState()
+    
+    when {
+        state.isLoading -> {
+            CircularProgressIndicator()
+        }
+        state.error != null -> {
+            ErrorMessage(state.error!!)
+        }
+        state.user != null -> {
+            UserDetails(state.user!!)
+        }
+        else -> {
+            // Etat initial
+        }
+    }
+}
+
+@Composable
+fun UserDetails(user: User) {
+    Column {
+        Text(text = user.name)
+        Text(text = user.email)
+        // ...
+    }
+}
+\end{lstlisting}
+
+\section{Thèmes et Material Design 3}
+
+\subsection{Configuration du thème}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun MyAppTheme(
+    darkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable () -> Unit
+) {
+    val colorScheme = when {
+        darkTheme -> DarkColorScheme
+        else -> LightColorScheme
+    }
+    
+    MaterialTheme(
+        colorScheme = colorScheme,
+        typography = Typography,
+        content = content
+    )
+}
+
+private val LightColorScheme = lightColorScheme(
+    primary = Purple40,
+    secondary = PurpleGrey40,
+    tertiary = Pink40
+    // ... autres couleurs
+)
+
+private val DarkColorScheme = darkColorScheme(
+    primary = Purple80,
+    secondary = PurpleGrey80,
+    tertiary = Pink80
+    // ... autres couleurs
+)
+\end{lstlisting}
+
+\section{Accès aux Données}
+
+\subsection{Room Database}
+\begin{lstlisting}[style=kotlinstyle]
+// Entity
+@Entity
+data class Task(
+    @PrimaryKey val id: Int,
+    val title: String,
+    val completed: Boolean = false
+)
+
+// DAO
+@Dao
+interface TaskDao {
+    @Query("SELECT * FROM task")
+    fun getAll(): Flow<List<Task>>
+    
+    @Insert
+    suspend fun insert(task: Task)
+    
+    @Update
+    suspend fun update(task: Task)
+}
+
+// Repository
+class TaskRepository(private val taskDao: TaskDao) {
+    fun getAllTasks(): Flow<List<Task>> = taskDao.getAll()
+    
+    suspend fun addTask(task: Task) = taskDao.insert(task)
+}
+\end{lstlisting}
+
+\subsection{Intégration avec Compose}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun TaskListScreen(viewModel: TaskViewModel = hiltViewModel()) {
+    val tasks by viewModel.tasks.collectAsState(initial = emptyList())
+    
+    LazyColumn {
+        items(tasks) { task ->
+            TaskItem(
+                task = task,
+                onToggle = { viewModel.toggleTask(task) }
+            )
+        }
+    }
+}
+
+@Composable
+fun TaskItem(task: Task, onToggle: () -> Unit) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Checkbox(
+            checked = task.completed,
+            onCheckedChange = { onToggle() }
+        )
+        
+        Text(
+            text = task.title,
+            modifier = Modifier.weight(1f),
+            textDecoration = if (task.completed) {
+                TextDecoration.LineThrough
+            } else {
+                TextDecoration.None
+            }
+        )
+    }
+}
+\end{lstlisting}
+
+\section{Projet Pratique : Application Todo}
+
+\subsection{Structure complète}
+\begin{lstlisting}[style=kotlinstyle]
+// MainActivity
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            TodoAppTheme {
+                TodoApp()
+            }
+        }
+    }
+}
+
+// Navigation
+@Composable
+fun TodoApp() {
+    val navController = rememberNavController()
+    
+    NavHost(navController, "tasks") {
+        composable("tasks") { 
+            TaskListScreen(
+                onAddTask = { 
+                    navController.navigate("add_task") 
+                }
+            ) 
+        }
+        composable("add_task") { 
+            AddTaskScreen(
+                onBack = { navController.popBackStack() }
+            ) 
+        }
+    }
+}
+\end{lstlisting}
+
+\subsection{Écran de liste des tâches}
+\begin{lstlisting}[style=kotlinstyle]
+@Composable
+fun TaskListScreen(
+    viewModel: TaskViewModel = hiltViewModel(),
+    onAddTask: () -> Unit
+) {
+    val tasks by viewModel.tasks.collectAsState()
+    
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("Mes Taches") }
+            )
+        },
+        floatingActionButton = {
+            FloatingActionButton(onClick = onAddTask) {
+                Icon(Icons.Default.Add, "Ajouter")
+            }
+        }
+    ) { padding ->
+        if (tasks.isEmpty()) {
+            EmptyState()
+        } else {
+            LazyColumn(modifier = Modifier.padding(padding)) {
+                items(tasks) { task ->
+                    TaskItem(
+                        task = task,
+                        onToggle = { viewModel.toggleTask(task) },
+                        onDelete = { viewModel.deleteTask(task) }
+                    )
+                }
+            }
+        }
+    }
+}
+\end{lstlisting}
+
+\section{Testing avec Compose}
+
+\subsection{Tests UI}
+\begin{lstlisting}[style=kotlinstyle]
+// Test de composant
+@Test
+fun shouldDisplayInitialText() {
+    composeTestRule.setContent {
+        MyAppTheme {
+            Greeting("Test")
+        }
+    }
+    
+    composeTestRule
+        .onNodeWithText("Hello Test!")
+        .assertExists()
+}
+
+// Test d'interaction
+@Test
+fun counterShouldIncrementWhenButtonClicked() {
+    composeTestRule.setContent {
+        Counter()
+    }
+    
+    composeTestRule.onNodeWithText("Compteur: 0").assertExists()
+    
+    composeTestRule.onNodeWithText("Incrementer").performClick()
+    
+    composeTestRule.onNodeWithText("Compteur: 1").assertExists()
+}
+\end{lstlisting}
+
+\section{Performance et Bonnes Pratiques}
+
+\subsection{Optimisations}
+\begin{itemize}
+\item \textbf{Utilisez \texttt{remember}} : Pour éviter les recalculs coûteux
+\item \textbf{Évitez les lambdas instanciées dans la recomposition} : Utilisez \texttt{rememberUpdatedState}
+\item \textbf{Utilisez \texttt{Lazy} lists} : Pour les longues listes
+\item \textbf{Profitez du preview} : Pour développer rapidement
+\end{itemize}
+
+\subsection{Composable Previews}
+\begin{lstlisting}[style=kotlinstyle]
+@Preview(showBackground = true)
+@Composable
+fun GreetingPreview() {
+    MyAppTheme {
+        Greeting("Android")
+    }
+}
+
+@Preview(
+    showBackground = true,
+    widthDp = 360,
+    heightDp = 640
+)
+@Composable
+fun TaskListPreview() {
+    MyAppTheme {
+        TaskListScreen(onAddTask = {})
+    }
+}
+\end{lstlisting}
+
+\section{Annexe : Cheatsheet Compose}
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Composant} & \textbf{Usage} \\
+\hline
+\texttt{Text()} & Affichage de texte \\
+\texttt{Button()} & Bouton cliquable \\
+\texttt{TextField()} & Champ de saisie \\
+\texttt{Image()} & Affichage d'image \\
+\texttt{Column()} & Layout vertical \\
+\texttt{Row()} & Layout horizontal \\
+\texttt{Box()} & Superposition \\
+\texttt{LazyColumn()} & Liste défilante \\
+\texttt{Scaffold()} & Structure d'écran \\
+\hline
+\end{tabular}
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Modifier} & \textbf{Effet} \\
+\hline
+\texttt{.fillMaxSize()} & Remplit l'espace disponible \\
+\texttt{.padding()} & Ajoute de l'espace \\
+\texttt{.background()} & Change la couleur de fond \\
+\texttt{.clickable()} & Rend cliquable \\
+\texttt{.size()} & Définit la taille \\
+\texttt{.weight()} & Poids dans Row/Column \\
+\hline
+\end{tabular}
+
+\end{document}

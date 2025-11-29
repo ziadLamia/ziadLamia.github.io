@@ -64,6 +64,12 @@ title: "Recherche"
 
 # 🏛️ Organisation de manifestations scientifiques
 
+*Conférence Grand Public "Les Mathématiques de l'Intelligence Artificielle"**  
+*Animée par Gabriel Peyré - Directeur de recherche au CNRS*  
+26 Mai 2025, Amphithéâtre du Centre culturel d'Essaouira  
+*Cette conférence s'inscrit dans le cadre de l'école de recherche CIMPA "Transport optimal, EDP et Optimisation : Applications en Sciences des données"*  
+*https://cimpa.este.ovh/*
+
 **Membre du comité d'organisation**  
 *CIMPA School 2025* : "Transport Optimal, EDP et Optimisation – Applications en Sciences des Données"  
 21-31 Avril 2025, EST Essaouira, Maroc  
