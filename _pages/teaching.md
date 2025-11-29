@@ -161,7 +161,245 @@ author_profile: true
 </details>
 
 ---
+---
+<!-- à coller dans ta page -->
+---
 
+<details>
+<summary>🎓 Tableau des PFEs Encadrés (Responsive + Icônes)</summary>
+
+<div style="overflow-x:auto; margin-top:15px;">
+
+<table style="width:100%; border-collapse:collapse; font-size:15px;">
+  <thead>
+    <tr style="background:#f2f2f2; text-align:left;">
+      <th style="padding:8px;">Année</th>
+      <th style="padding:8px;">Filière</th>
+      <th style="padding:8px;">Titre du PFE</th>
+      <th style="padding:8px;">Techno</th>
+      <th style="padding:8px;">Réalisé par</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <!-- **************************
+          📌 GI – Génie Informatique
+    *************************** -->
+
+    <tr>
+      <td>2018/2019</td>
+      <td>GI</td>
+      <td>Site web de consultation médicale à distance</td>
+      <td>🌐 Web</td>
+      <td>Kaoula Abou-Bichara & Ghizlane Merzagui</td>
+    </tr>
+
+    <tr>
+      <td>2018/2019</td>
+      <td>GI</td>
+      <td>Application Android de gestion d’un restaurant</td>
+      <td>📱 Mobile</td>
+      <td>Soukaina Eddib & Najwa Houmam</td>
+    </tr>
+
+    <tr>
+      <td>2018/2019</td>
+      <td>GI</td>
+      <td>Plateforme web de gestion des congrès</td>
+      <td>🌐 Web</td>
+      <td>Zakaria Charra & Zahira El Mahdaouy</td>
+    </tr>
+
+    <tr>
+      <td>2019/2020</td>
+      <td>GI</td>
+      <td>Gestion des absences par QR Code – Front-end</td>
+      <td>🌐 Web</td>
+      <td>Abdelghani Laqdour & Abdelhakime Yacoubi</td>
+    </tr>
+
+    <tr>
+      <td>2019/2020</td>
+      <td>GI</td>
+      <td>Gestion des absences par QR Code – Back-end</td>
+      <td>🌐 Web</td>
+      <td>Hamza Mourabit & Mohsine Oukaid</td>
+    </tr>
+
+    <tr>
+      <td>2020/2021</td>
+      <td>GI</td>
+      <td>Application mobile d’un établissement scolaire</td>
+      <td>📱 Mobile</td>
+      <td>Ismail Hamdach & Hamza Bouhali</td>
+    </tr>
+
+    <tr>
+      <td>2020/2021</td>
+      <td>GI</td>
+      <td>Application mobile d’inventaire</td>
+      <td>📱 Mobile</td>
+      <td>Ilyas Zarfaoui & Oussama Bendhiba</td>
+    </tr>
+
+    <tr>
+      <td>2021/2022</td>
+      <td>GI</td>
+      <td>Site Web de gestion des étudiants</td>
+      <td>🌐 Web</td>
+      <td>Manal Abou-Bichara & Meriame Biblghache</td>
+    </tr>
+
+    <tr>
+      <td>2021/2022</td>
+      <td>GI</td>
+      <td>Application d’e-commerce</td>
+      <td>🌐 Web</td>
+      <td>Mohamed Hachim Rhounimi & Rida Mihi</td>
+    </tr>
+
+    <tr>
+      <td>2022/2023</td>
+      <td>GI</td>
+      <td>Application Web de gestion des réunions</td>
+      <td>🌐 Web</td>
+      <td>Kawtar Ait Salah & Hiba Rais</td>
+    </tr>
+
+    <tr>
+      <td>2023/2024</td>
+      <td>GI</td>
+      <td>Application mobile de recommandation de recettes</td>
+      <td>📱 Mobile</td>
+      <td>Dounya Zahidi & Aicha Zeroual</td>
+    </tr>
+
+    <tr>
+      <td>2023/2024</td>
+      <td>GI</td>
+      <td>Application Desktop « ChatGenie »</td>
+      <td>🖥️ Desktop</td>
+      <td>Abdelmajid Ouchni & Youssef Abouelmahassine</td>
+    </tr>
+
+    <tr>
+      <td>2023/2024</td>
+      <td>GI</td>
+      <td>Système de gestion hôtelière</td>
+      <td>🌐 Web</td>
+      <td>Wiam Akil & Fatima Ez-Zahraa Ait-Hssain</td>
+    </tr>
+
+    <tr>
+      <td>2023/2024</td>
+      <td>GI</td>
+      <td>Application Web de commerce électronique</td>
+      <td>🌐 Web</td>
+      <td>Hafsa Idsaid</td>
+    </tr>
+
+
+    <!-- **************************
+         📌 IDSD – Systèmes Distribués
+    *************************** -->
+
+    <tr style="background:#fafafa;">
+      <td>2020/2021</td>
+      <td>IDSD</td>
+      <td>Application Web & Mobile de suivi Covid-19</td>
+      <td>📱🌐 Mobile & Web</td>
+      <td>Ayoub Errachidi & Oumaima Bousselham</td>
+    </tr>
+
+    <tr>
+      <td>2020/2021</td>
+      <td>IDSD</td>
+      <td>Reconnaissance de chiffres manuscrits (ML)</td>
+      <td>🤖 Machine Learning</td>
+      <td>Chamymae Bennouri & Khaoula Boulhdir</td>
+    </tr>
+
+    <tr>
+      <td>2021/2022</td>
+      <td>IDSD</td>
+      <td>Gestion des stages avec Machine Learning</td>
+      <td>🤖 ML</td>
+      <td>Adam Hrioui & Achraf Mouadi</td>
+    </tr>
+
+    <tr>
+      <td>2021/2022</td>
+      <td>IDSD</td>
+      <td>Assistant personnel Seq2Seq</td>
+      <td>🤖 IA / NLP</td>
+      <td>Hamza Elharchi-Elmaslohi & Ahmed Yassine El Hachymi</td>
+    </tr>
+
+    <tr>
+      <td>2021/2022</td>
+      <td>IDSD</td>
+      <td>Prédiction de maladies (ML / Python)</td>
+      <td>🤖 ML</td>
+      <td>Chaima Ganbour & Soufiane Ajlali</td>
+    </tr>
+
+    <tr>
+      <td>2022/2023</td>
+      <td>IDSD</td>
+      <td>Plateforme de signature électronique</td>
+      <td>🔐 Sécurité</td>
+      <td>Achraf Abdala & Salah Aboulkamh</td>
+    </tr>
+
+    <tr>
+      <td>2022/2023</td>
+      <td>IDSD</td>
+      <td>Chatbot basé sur la finance</td>
+      <td>🤖 IA / Chatbot</td>
+      <td>Abderrahmane Bourri & Yasser Namez</td>
+    </tr>
+
+    <tr>
+      <td>2022/2023</td>
+      <td>IDSD</td>
+      <td>Vérificateur & correcteur de grammaire</td>
+      <td>🤖 NLP</td>
+      <td>Oumayma Iddouche & Mustapha Benchahyd</td>
+    </tr>
+
+    <tr>
+      <td>2024/2025</td>
+      <td>IDSD</td>
+      <td>Application Web3 de vote « VoteChain »</td>
+      <td>🌐🧾 Web3</td>
+      <td>Ferdaous Assaadi & Youssef El Fassih</td>
+    </tr>
+
+    <tr>
+      <td>2024/2025</td>
+      <td>IDSD</td>
+      <td>AI Web Application to Teach Children French</td>
+      <td>🤖 IA éducative</td>
+      <td>Lahder Abdelaziz & Igrouchfi Lahcen</td>
+    </tr>
+
+    <tr>
+      <td>2024/2025</td>
+      <td>IDSD</td>
+      <td>Healthcare Consultation Mobile Platform « HealthBridg »</td>
+      <td>📱 Mobile Health</td>
+      <td>El Barnaty Othmane & Chabili Saad</td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+</details>
+
+---
 <details>
 <summary>🎓 Formations Organisées</summary>
 
