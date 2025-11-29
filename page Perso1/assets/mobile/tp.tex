@@ -1,0 +1,278 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{listings}
+
+\geometry{margin=2.2cm}
+
+% ==============================
+% COLORATION DU CODE KOTLIN
+% ==============================
+\definecolor{kotlinBlue}{RGB}{47,91,164}
+\definecolor{kotlinOrange}{RGB}{255,140,0}
+\definecolor{kotlinPurple}{RGB}{135,0,155}
+\definecolor{lightgray}{rgb}{0.95,0.95,0.95}
+
+\lstdefinelanguage{Kotlin}{
+    morekeywords={
+        class, fun, val, var, if, else, for, while, when,
+        interface, override, return, println, true, false
+    },
+    sensitive=true,
+    morecomment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]"
+}
+
+\lstdefinestyle{KotlinStyle}{
+    backgroundcolor=\color{lightgray},
+    keywordstyle=\color{kotlinBlue}\bfseries,
+    stringstyle=\color{kotlinOrange},
+    commentstyle=\color{gray},
+    basicstyle=\ttfamily\footnotesize,
+    frame=single,
+    breaklines=true
+}
+
+% ==============================
+\title{\textbf{Travaux Pratiques Kotlin \\ Variables – Collections – POO – Héritage}}
+\author{Pr. Lamia ZIAD}
+\date{EST Essaouira}
+
+\begin{document}
+
+\maketitle
+
+\section*{I. Travaux Pratiques : Kotlin — Variables, Listes, Tableaux et Classes}
+
+% ---------------------------------------------------------
+\subsection*{Exercice 1 : Manipulation des Variables}
+
+\textbf{Objectif :}
+\begin{itemize}
+    \item comprendre les types de variables en Kotlin;
+    \item effectuer des opérations simples.
+\end{itemize}
+
+\textbf{Consignes :}
+\begin{enumerate}
+    \item Déclarer une variable \texttt{nom} de type \texttt{String} contenant votre prénom.
+    \item Déclarer une variable \texttt{age} de type \texttt{Int}.
+    \item Afficher : \emph{``Je m'appelle [nom] et j'ai [age] ans.''}
+    \item Créer une variable \texttt{anneeNaissance} calculée automatiquement.
+\end{enumerate}
+
+\textbf{Exemple de code :}
+
+\begin{lstlisting}[style=KotlinStyle, language=Kotlin]
+val nom: String = "Ahmed"
+val age: Int = 20
+println("Je m'appelle $nom et j'ai $age ans.")
+
+val anneeNaissance = 2025 - age
+println("Annee de naissance : $anneeNaissance")
+\end{lstlisting}
+
+% ---------------------------------------------------------
+\subsection*{Exercice 2 : Listes et Tableaux}
+
+\textbf{Consignes :}
+\begin{enumerate}
+    \item Créer une liste mutable contenant trois noms de villes.
+    \item Ajouter une ville à la liste.
+    \item Afficher chaque ville avec une boucle.
+    \item Créer un tableau contenant : 10, 20, 30, 40, 50.
+    \item Calculer et afficher la somme des éléments.
+\end{enumerate}
+
+\textbf{Exemple de code :}
+
+\begin{lstlisting}[style=KotlinStyle, language=Kotlin]
+val villes = mutableListOf("Rabat", "Casablanca", "Agadir")
+villes.add("Essaouira")
+
+for (v in villes) {
+    println(v)
+}
+
+val tableau = arrayOf(10, 20, 30, 40, 50)
+val somme = tableau.sum()
+println("Somme = $somme")
+\end{lstlisting}
+
+% ---------------------------------------------------------
+\subsection*{Exercice 3 : Classes et Objets}
+
+\textbf{Consignes :}
+\begin{enumerate}
+    \item Créer une classe \texttt{Personne(nom, age)}.
+    \item Ajouter une méthode \texttt{sePresenter()}.
+    \item Instancier deux objets et appeler la méthode.
+\end{enumerate}
+
+\textbf{Exemple de code :}
+
+\begin{lstlisting}[style=KotlinStyle, language=Kotlin]
+class Personne(val nom: String, val age: Int) {
+    fun sePresenter() {
+        println("Bonjour, je m'appelle $nom et j'ai $age ans.")
+    }
+}
+
+val p1 = Personne("Sara", 22)
+val p2 = Personne("Yassine", 30)
+
+p1.sePresenter()
+p2.sePresenter()
+\end{lstlisting}
+
+% ---------------------------------------------------------
+\subsection*{Exercice 4 : Héritage et Interfaces}
+
+\textbf{Consignes :}
+\begin{itemize}
+    \item Classe \texttt{Animal} avec propriété \texttt{nom} et méthode \texttt{faireDuBruit()}.
+    \item Classe \texttt{Chien} : afficher ``Ouaf Ouaf!''.
+    \item Classe \texttt{Chat} : afficher ``Miaou!''.
+    \item Tester les deux objets.
+\end{itemize}
+
+\textbf{Exemple de code :}
+
+\begin{lstlisting}[style=KotlinStyle, language=Kotlin]
+open class Animal(val nom: String) {
+    open fun faireDuBruit() {
+        println("Bruit inconnu")
+    }
+}
+
+class Chien(nom: String) : Animal(nom) {
+    override fun faireDuBruit() {
+        println("Ouaf Ouaf!")
+    }
+}
+
+class Chat(nom: String) : Animal(nom) {
+    override fun faireDuBruit() {
+        println("Miaou!")
+    }
+}
+
+val c1 = Chien("Rex")
+val c2 = Chat("Mimi")
+
+c1.faireDuBruit()
+c2.faireDuBruit()
+\end{lstlisting}
+
+\newpage
+\section*{II. Travaux Pratiques : Programmation Orientée Objet en Kotlin}
+
+\subsection*{Titre : Gestion des véhicules}
+
+\textbf{Objectifs :}
+\begin{itemize}
+    \item comprendre les classes et l'héritage;
+    \item manipuler les interfaces;
+    \item créer et utiliser des objets.
+\end{itemize}
+
+% ---------------------------------------------------------
+\subsection*{Consignes — Architecture demandée}
+
+\textbf{1. Classe Vehicule :}
+\begin{itemize}
+    \item propriétés : \texttt{marque}, \texttt{modele}, \texttt{vitesseMax};
+    \item méthode : \texttt{afficherDetails()}.
+\end{itemize}
+
+\textbf{2. Interface Reparable :}
+\begin{itemize}
+    \item méthode : \texttt{reparer()}.
+\end{itemize}
+
+\textbf{3. Héritage :}
+\begin{itemize}
+    \item \texttt{Voiture} hérite de \texttt{Vehicule} + propriété \texttt{nombrePortes};
+    \item \texttt{Moto} hérite de \texttt{Vehicule} + propriété \texttt{cylindree};
+    \item les deux implémentent \texttt{Reparable}.
+\end{itemize}
+
+\textbf{4. Programme principal :}
+\begin{itemize}
+    \item créer une voiture et une moto;
+    \item afficher les détails;
+    \item simuler une réparation.
+\end{itemize}
+
+% ---------------------------------------------------------
+\subsection*{Exemple de code (structure attendue)}
+
+\begin{lstlisting}[style=KotlinStyle, language=Kotlin]
+open class Vehicule(
+    val marque: String,
+    val modele: String,
+    val vitesseMax: Int
+) {
+    open fun afficherDetails() {
+        println("Vehicule: $marque $modele, Vitesse max: $vitesseMax km/h")
+    }
+}
+
+interface Reparable {
+    fun reparer()
+}
+
+class Voiture(
+    marque: String,
+    modele: String,
+    vitesseMax: Int,
+    val nombrePortes: Int
+) : Vehicule(marque, modele, vitesseMax), Reparable {
+
+    override fun afficherDetails() {
+        super.afficherDetails()
+        println("Nombre de portes: $nombrePortes")
+    }
+
+    override fun reparer() {
+        println("La voiture $marque $modele est en reparation.")
+    }
+}
+
+class Moto(
+    marque: String,
+    modele: String,
+    vitesseMax: Int,
+    val cylindree: Int
+) : Vehicule(marque, modele, vitesseMax), Reparable {
+
+    override fun afficherDetails() {
+        super.afficherDetails()
+        println("Cylindree: ${cylindree}cc")
+    }
+
+    override fun reparer() {
+        println("La moto $marque $modele est en reparation.")
+    }
+}
+
+fun main() {
+    val voiture = Voiture("Toyota", "Corolla", 180, 4)
+    val moto = Moto("Yamaha", "R1", 299, 1000)
+
+    println("---- Details des vehicules ----")
+    voiture.afficherDetails()
+    moto.afficherDetails()
+
+    println("\n---- Reparation ----")
+    voiture.reparer()
+    moto.reparer()
+}
+\end{lstlisting}
+
+\end{document}

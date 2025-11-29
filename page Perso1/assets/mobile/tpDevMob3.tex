@@ -1,0 +1,103 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+
+\geometry{margin=2.2cm}
+
+\title{\textbf{TP 3 — MVVM, ViewModel et Navigation Compose}}
+\author{Pr. Lamia ZIAD}
+\date{EST Essaouira}
+
+\begin{document}
+	\maketitle
+	
+	\section*{Objectifs}
+	\begin{itemize}
+		\item Comprendre l’architecture MVVM en développement mobile ;
+		\item Manipuler un ViewModel ;
+		\item Utiliser Navigation Compose ;
+		\item Mettre en place un écran liste + un écran détails.
+	\end{itemize}
+	
+	% ---------------------------------------------------------
+	\section*{Exercice 1 — Création d’un ViewModel}
+	
+	Créer un \textbf{ViewModel} contenant une liste d'utilisateurs.
+	
+	\textbf{Code à écrire :}
+	
+	\smallskip
+	\texttt{
+		class UserViewModel : ViewModel() \{ \\
+		\quad val users = listOf("Amine", "Laila", "Yassine", "Salma") \\
+		\}
+	}
+	
+	% ---------------------------------------------------------
+	\section*{Exercice 2 — Mise en place de la Navigation}
+	
+	Créer deux écrans :
+	\begin{itemize}
+		\item \textbf{ScreenListe} : affiche la liste des utilisateurs ;
+		\item \textbf{ScreenDetails} : affiche ``Profil de : [nom]''.
+	\end{itemize}
+	
+	Créer un \texttt{NavHost} avec les routes suivantes :
+	\begin{itemize}
+		\item \texttt{"liste"}
+		\item \texttt{"details/\{nom\}"}
+	\end{itemize}
+	
+	Exemple de navigation (à écrire dans votre code) :
+	
+	\smallskip
+	\texttt{
+		navController.navigate("details/" + nom)
+	}
+	
+	% ---------------------------------------------------------
+	\section*{Exercice 3 — Interaction Liste → Détails}
+	
+	Lorsque l’utilisateur clique sur un nom dans la liste, naviguer vers l’écran détails.
+	
+	Exemple de composable liste (à écrire vous-même) :
+	\begin{itemize}
+		\item une colonne ou LazyColumn ;
+		\item un Text cliquable pour chaque utilisateur ;
+		\item un appel à \texttt{navController.navigate(...)}.
+	\end{itemize}
+	
+	% ---------------------------------------------------------
+	\section*{Exercice 4 — Écran de profil}
+	
+	Créer un composable :
+	
+	\texttt{@Composable fun ScreenDetails(nom: String)}
+	
+	Affichage attendu :
+	
+	\bigskip
+	\texttt{"Profil de : " + nom}
+	
+	\bigskip
+	
+	Vous pouvez utiliser :
+	\begin{itemize}
+		\item Column
+		\item Text
+	\end{itemize}
+	
+	% ---------------------------------------------------------
+	\section*{Travail à Rendre}
+	\begin{itemize}
+		\item Code complet du ViewModel ;
+		\item Code du NavHost ;
+		\item Écran liste et écran détails ;
+		\item Capture d’écran montrant le passage d’un écran à l’autre ;
+		\item Brève explication (5 lignes) du fonctionnement de Navigation Compose.
+	\end{itemize}
+	
+\end{document}

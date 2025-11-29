@@ -1,0 +1,26 @@
+title: "Dr. Lamia Ziad"
+description: "Enseignante-Chercheuse en Informatique — Traitement d’images, Modèles non locaux, Restauration du bruit multiplicatif"
+theme: minima
+markdown: kramdown
+
+author:
+  name: "Dr. Lamia Ziad"
+  email: "lamia.ziad@example.com"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+nav:
+  - name: "Accueil"
+    link: "/"
+  - name: "Enseignement"
+    link: "/enseignement"
+  - name: "Recherche"
+    link: "/recherche"
+  - name: "Encadrement PFE"
+    link: "/pfe"
+  - name: "CV"
+    link: "/cv"
+  - name: "Contact"
+    link: "/contact"

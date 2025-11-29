@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\geometry{margin=2.2cm}
+
+% STYLE CODE
+\definecolor{kotlinBlue}{RGB}{47,91,164}
+\definecolor{lightgray}{rgb}{0.95,0.95,0.95}
+\lstdefinestyle{KotlinStyle}{
+    backgroundcolor=\color{lightgray},
+    keywordstyle=\color{kotlinBlue}\bfseries,
+    basicstyle=\ttfamily\footnotesize,
+    frame=single,
+    breaklines=true
+}
+
+\title{\textbf{TP 2 — Listes, LazyColumn et Cartes}}
+\author{Pr. Lamia ZIAD}
+\date{EST Essaouira}
+
+\begin{document}
+\maketitle
+
+\section*{Objectifs}
+\begin{itemize}
+    \item Manipuler les listes dans Compose ;
+    \item Afficher des données avec LazyColumn ;
+    \item Créer des cartes (Card) stylées ;
+    \item Ajouter une interaction (clic).
+\end{itemize}
+
+\section*{Exercice 1 — Liste simple}
+Créer une liste de villes :
+\begin{itemize}
+    \item Casablanca
+    \item Marrakech
+    \item Agadir
+    \item Essaouira
+\end{itemize}
+
+Afficher la liste avec \texttt{LazyColumn}.
+
+\textbf{Exemple :}
+\begin{lstlisting}[style=KotlinStyle]
+@Composable
+fun ListeVilles() {
+    val villes = listOf("Casablanca","Marrakech","Agadir","Essaouira")
+
+    LazyColumn {
+        items(villes) { ville ->
+            Text(text = ville)
+        }
+    }
+}
+\end{lstlisting}
+
+\section*{Exercice 2 — Fiches stylées (Card)}
+Créer une Card pour chaque ville :
+\begin{itemize}
+    \item Nom de la ville ;
+    \item Une icône ;
+    \item Une couleur d’arrière-plan.
+\end{itemize}
+
+\section*{Exercice 3 — Interaction}
+Lorsque l’utilisateur clique sur une ville, afficher un message en bas de l’écran :  
+\textbf{“Vous avez choisi : [ville]”}
+
+\textbf{Indication :} utiliser \texttt{remember { mutableStateOf(...) }}
+
+\section*{Travail à Rendre}
+\begin{itemize}
+    \item Capture de la LazyColumn ;
+    \item Code complet ;
+    \item Explication du fonctionnement des Cards.
+\end{itemize}
+
+\end{document}

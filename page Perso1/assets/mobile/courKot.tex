@@ -1,0 +1,481 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+
+\geometry{margin=2cm}
+
+\definecolor{ESTblue}{RGB}{0,70,140}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{kotlinstyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    frame=single,
+    language=Java
+}
+
+\makeatletter
+\def\maketitle{\begin{titlepage}
+		\centering
+		\vspace*{2cm}
+		\includegraphics[width=8cm]{logo.png}\\[3cm]
+		{\Huge\bfseries\textcolor{ESTblue}{DUT : Génie Informatique}}\\[0.5cm]
+		{\Large\bfseries Cours Kotlin }\\[0.5cm]
+		{\large Pr. Lamia ZIAD}\\
+		{\large École Supérieure de Technologie d'Essaouira}\\[1cm]
+		\vfill
+	\end{titlepage}
+}
+\makeatother
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction à Kotlin}
+
+\subsection{Qu'est-ce que Kotlin ?}
+Kotlin est un langage de programmation moderne, concis et sécurisé développé par JetBrains. Il est :
+\begin{itemize}
+\item \textbf{Interopérable} : Fonctionne parfaitement avec Java
+\item \textbf{Concis} : Réduit la verbosité du code
+\item \textbf{Sécurisé} : Évite les erreurs courantes (NullPointerException)
+\item \textbf{Multiplateforme} : Peut être utilisé sur Android, Web, Desktop, etc.
+\end{itemize}
+
+\subsection{Configuration de l'environnement}
+\begin{lstlisting}[style=kotlinstyle]
+// Installation avec SDKMAN!
+sdk install kotlin
+
+// Verification
+kotlin -version
+\end{lstlisting}
+
+\section{Les Bases de Kotlin}
+
+\subsection{Hello World}
+\begin{lstlisting}[style=kotlinstyle]
+fun main() {
+    println("Hello, World!")
+}
+\end{lstlisting}
+
+\subsection{Variables et Types}
+\begin{lstlisting}[style=kotlinstyle]
+// Variables immuables (recommande)
+val nom: String = "Alice"
+val age: Int = 25
+
+// Inference de type
+val ville = "Paris"  // Type String infere
+
+// Variables mutables
+var compteur = 0
+compteur = 10
+
+// Types de base
+val nombre: Int = 42
+val decimal: Double = 3.14
+val bool: Boolean = true
+val caractere: Char = 'A'
+val texte: String = "Kotlin"
+\end{lstlisting}
+
+\subsection{Null Safety}
+\begin{lstlisting}[style=kotlinstyle]
+// Variable non-nullable (ne peut pas etre null)
+val nom: String = "Alice"
+
+// Variable nullable (peut etre null)
+val nomNullable: String? = null
+
+// Safe call operator
+val longueur = nomNullable?.length
+
+// Elvis operator
+val longueurSafe = nomNullable?.length ?: 0
+
+// Assertion non-null (a utiliser avec precaution)
+val longueurForced = nomNullable!!.length
+\end{lstlisting}
+
+\section{Structures de Contrôle}
+
+\subsection{Conditions}
+\begin{lstlisting}[style=kotlinstyle]
+// If-else classique
+val note = 85
+if (note >= 90) {
+    println("Excellent")
+} else if (note >= 70) {
+    println("Bon")
+} else {
+    println("A ameliorer")
+}
+
+// If comme expression
+val resultat = if (note >= 50) "Reussi" else "Echoue"
+\end{lstlisting}
+
+\subsection{When (switch amélioré)}
+\begin{lstlisting}[style=kotlinstyle]
+val jour = 3
+val nomJour = when (jour) {
+    1 -> "Lundi"
+    2 -> "Mardi"
+    3 -> "Mercredi"
+    4 -> "Jeudi"
+    5 -> "Vendredi"
+    in 6..7 -> "Weekend"
+    else -> "Jour invalide"
+}
+
+// When avec plusieurs conditions
+when {
+    note >= 90 -> println("A")
+    note >= 80 -> println("B")
+    note >= 70 -> println("C")
+    else -> println("D")
+}
+\end{lstlisting}
+
+\section{Fonctions}
+
+\subsection{Déclaration de fonctions}
+\begin{lstlisting}[style=kotlinstyle]
+// Fonction simple
+fun direBonjour(nom: String) {
+    println("Bonjour $nom")
+}
+
+// Fonction avec retour
+fun additionner(a: Int, b: Int): Int {
+    return a + b
+}
+
+// Expression function (une seule ligne)
+fun multiplier(a: Int, b: Int): Int = a * b
+
+// Fonction avec parametres par defaut
+fun saluer(nom: String, message: String = "Bonjour") {
+    println("$message $nom")
+}
+\end{lstlisting}
+
+\subsection{Fonctions d'extension}
+\begin{lstlisting}[style=kotlinstyle]
+// Ajouter une fonction a la classe String
+fun String.estEmailValide(): Boolean {
+    return this.contains("@") && this.contains(".")
+}
+
+// Utilisation
+val email = "test@example.com"
+println(email.estEmailValide()) // true
+\end{lstlisting}
+
+\section{Collections}
+
+\subsection{Listes}
+\begin{lstlisting}[style=kotlinstyle]
+// Liste immuable
+val noms = listOf("Alice", "Bob", "Charlie")
+
+// Liste mutable
+val nombres = mutableListOf(1, 2, 3)
+nombres.add(4)
+
+// Operations sur les listes
+val nombresPairs = nombres.filter { it % 2 == 0 }
+val nombresDoubles = nombres.map { it * 2 }
+val somme = nombres.reduce { acc, n -> acc + n }
+\end{lstlisting}
+
+\subsection{Tableaux et Maps}
+\begin{lstlisting}[style=kotlinstyle]
+// Tableaux
+val tableau = arrayOf(1, 2, 3, 4, 5)
+
+// Maps
+val ages = mapOf(
+    "Alice" to 25,
+    "Bob" to 30,
+    "Charlie" to 35
+)
+
+// Map mutable
+val capitales = mutableMapOf(
+    "France" to "Paris",
+    "Allemagne" to "Berlin"
+)
+capitales["Espagne"] = "Madrid"
+\end{lstlisting}
+
+\section{Programmation Orientée Objet}
+
+\subsection{Classes et Objets}
+\begin{lstlisting}[style=kotlinstyle]
+// Classe simple
+class Personne(val nom: String, var age: Int) {
+    fun saluer() {
+        println("Bonjour, je m'appelle $nom")
+    }
+}
+
+// Utilisation
+val personne = Personne("Alice", 25)
+personne.saluer()
+personne.age = 26
+\end{lstlisting}
+
+\subsection{Propriétés et Getters/Setters}
+\begin{lstlisting}[style=kotlinstyle]
+class Rectangle(val largeur: Int, val hauteur: Int) {
+    val surface: Int
+        get() = largeur * hauteur
+        
+    var couleur: String = "blanc"
+        set(value) {
+            if (value.isNotBlank()) {
+                field = value
+            }
+        }
+}
+\end{lstlisting}
+
+\subsection{Héritage}
+\begin{lstlisting}[style=kotlinstyle]
+// Classe ouverte (peut etre heritee)
+open class Animal(val nom: String) {
+    open fun faireDuBruit() {
+        println("L'animal fait du bruit")
+    }
+}
+
+class Chien(nom: String) : Animal(nom) {
+    override fun faireDuBruit() {
+        println("$nom aboie: Wouf Wouf!")
+    }
+}
+\end{lstlisting}
+
+\section{Programmation Fonctionnelle}
+
+\subsection{Lambdas et Fonctions d'ordre supérieur}
+\begin{lstlisting}[style=kotlinstyle]
+// Lambda simple
+val addition = { a: Int, b: Int -> a + b }
+
+// Fonction prenant une lambda en parametre
+fun operation(a: Int, b: Int, op: (Int, Int) -> Int): Int {
+    return op(a, b)
+}
+
+// Utilisation
+val resultat = operation(5, 3) { x, y -> x * y }
+\end{lstlisting}
+
+\subsection{Scope Functions}
+\begin{lstlisting}[style=kotlinstyle]
+data class Utilisateur(val nom: String, var age: Int)
+
+val user = Utilisateur("Alice", 25)
+
+// let - execute un bloc sur un objet non-null
+user.let { 
+    println("Nom: ${it.nom}")
+    println("Age: ${it.age}")
+}
+
+// apply - configure un objet
+val newUser = Utilisateur("Bob", 30).apply {
+    age = 31
+}
+
+// with - execute un bloc avec l'objet comme receiver
+with(user) {
+    println("$nom a $age ans")
+}
+\end{lstlisting}
+
+\section{Coroutines (Programmation Asynchrone)}
+
+\subsection{Introduction aux Coroutines}
+\begin{lstlisting}[style=kotlinstyle]
+import kotlinx.coroutines.*
+
+// Fonction suspendue
+suspend fun fetchData(): String {
+    delay(1000) // Simulation d'une operation longue
+    return "Donnees recuperees"
+}
+
+// Utilisation
+fun main() = runBlocking {
+    println("Debut")
+    
+    val result = async { fetchData() }
+    
+    println("En attente...")
+    println(result.await())
+    
+    println("Fin")
+}
+\end{lstlisting}
+
+\subsection{Parallélisme avec les Coroutines}
+\begin{lstlisting}[style=kotlinstyle]
+suspend fun getTemperature(): Int {
+    delay(500)
+    return 25
+}
+
+suspend fun getHumidity(): Int {
+    delay(700)
+    return 60
+}
+
+fun main() = runBlocking {
+    val temps = measureTimeMillis {
+        val temperature = async { getTemperature() }
+        val humidity = async { getHumidity() }
+        
+        println("Temperature: ${temperature.await()}C")
+        println("Humidite: ${humidity.await()}%")
+    }
+    println("Temps total: ${temps}ms")
+}
+\end{lstlisting}
+
+\section{Exercices Pratiques}
+
+\subsection{Exercice 1 : Calculatrice}
+\begin{lstlisting}[style=kotlinstyle]
+fun calculatrice(a: Double, b: Double, operation: String): Double {
+    return when (operation) {
+        "+" -> a + b
+        "-" -> a - b
+        "*" -> a * b
+        "/" -> if (b != 0.0) a / b else throw IllegalArgumentException("Division par zero")
+        else -> throw IllegalArgumentException("Operation non supportee")
+    }
+}
+\end{lstlisting}
+
+\subsection{Exercice 2 : Gestion d'étudiants}
+\begin{lstlisting}[style=kotlinstyle]
+data class Etudiant(val nom: String, val notes: List<Int>) {
+    val moyenne: Double
+        get() = notes.average()
+    
+    fun aReussi(seuil: Int = 50): Boolean {
+        return moyenne >= seuil
+    }
+}
+
+class Promotion {
+    private val etudiants = mutableListOf<Etudiant>()
+    
+    fun ajouterEtudiant(etudiant: Etudiant) {
+        etudiants.add(etudiant)
+    }
+    
+    fun meilleurEtudiant(): Etudiant? {
+        return etudiants.maxByOrNull { it.moyenne }
+    }
+}
+\end{lstlisting}
+
+\subsection{Exercice 3 : API Simulée}
+\begin{lstlisting}[style=kotlinstyle]
+// Simulation d'appel API
+suspend fun fetchUserData(userId: Int): String {
+    delay(2000) // Simulation de latence reseau
+    return "Donnees de l'utilisateur $userId"
+}
+
+// Gestion des erreurs
+suspend fun fetchUserDataSafe(userId: Int): Result<String> {
+    return try {
+        Result.success(fetchUserData(userId))
+    } catch (e: Exception) {
+        Result.failure(e)
+    }
+}
+\end{lstlisting}
+
+\section{Bonnes Pratiques}
+
+\subsection{Conseils de Développement}
+\begin{itemize}
+\item \textbf{Préférez \texttt{val} à \texttt{var}} : L'immutabilité rend le code plus prévisible
+\item \textbf{Utilisez les data classes} : Pour les classes qui stockent principalement des données
+\item \textbf{Évitez \texttt{!!}} : Préférez les safe calls ou le Elvis operator
+\item \textbf{Utilisez les scope functions} : Pour un code plus lisible et concis
+\item \textbf{Coroutines pour l'asynchrone} : Évitez les callbacks complexes
+\end{itemize}
+
+\subsection{Motifs de Conception Courants}
+\begin{lstlisting}[style=kotlinstyle]
+// Singleton
+object DatabaseManager {
+    fun connect() { /* ... */ }
+}
+
+// Builder pattern avec apply
+class Config {
+    var host: String = "localhost"
+    var port: Int = 8080
+}
+
+val config = Config().apply {
+    host = "example.com"
+    port = 9000
+}
+\end{lstlisting}
+
+\section{Annexe : Cheatsheet Rapide}
+
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Concept} & \textbf{Syntaxe Kotlin} \\
+\hline
+Variable immuable & \texttt{val x = 5} \\
+Variable mutable & \texttt{var x = 5} \\
+Fonction & \texttt{fun nom() \{ ... \}} \\
+Classe & \texttt{class Nom(val prop: Type)} \\
+Condition & \texttt{if (condition) \{ ... \} else \{ ... \}} \\
+Boucle & \texttt{for (item in collection) \{ ... \}} \\
+Lambda & \texttt{\{ x -> x * 2 \}} \\
+Null safety & \texttt{val len = text?.length ?: 0} \\
+\hline
+\end{tabular}
+
+\end{document}
