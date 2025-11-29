@@ -1,56 +1,128 @@
 ---
 layout: archive
-title: ""
+title: "Publications Scientifiques"
 permalink: /publications/
 author_profile: true
 ---
 
-## Publications:
+## 📄 Articles dans des Revues Internationales
 
-### 📄 Articles publiés
+### 2025
+**O. Oubbih, L. Ziad**  
+[**A nonlocal weighted difference of anisotropic and isotropic total variation to regularize partition boundaries in an image**](https://doi.org/10.1007/sxxxxx)  
+*Computational and Applied Mathematics*, 2025, 44, 62  
+**Category:** Q2
 
-- [F. Bendaida](https://fbendaida.github.io/), [F. Karami](http://este.uca.ma/mmsc/Karami.html), D. Meskine. [**Nonlocal p-Biharmonic model for Cauchy noise removal**](https://doi.org/10.3934/mfc.2025003). *Mathematical Foundations of Computing*, 2025.  
-  **Clarivate Analytics Impact Factor 2025:** 1.3  
-  **SJR 2024:** 0.563 — **Category:** Q2
+### 2024
+**L. Ziad, F. Karami, O. Oubbih, F. Sniba**  
+[**A Nonlocal Model For Image Restoration Corrupted by Multiplicative Noise**](https://doi.org/10.1007/s11760-024-03277-x)  
+*Signal, Image and Video Processing*, 2024, 18, 5701–5718  
+**Category:** Q2
+
+### 2019
+**L. Ziad, O. Oubbih, F. Sniba**  
+[**An Efficient Algorithm for Reconstruction Images Corrupted by Some Multiplicative Noises**](https://doi.org/10.2478/mjpaa-2019-0016)  
+*Moroccan Journal of Pure and Applied Analysis*, 2019, 5(2), 263–278  
+**Category:** Q3
+
+### 2018
+**F. Karami, K. Sadik, L. Ziad**  
+[**A Variable Exponent Nonlocal p(X)-Laplacian Equation for Image Restoration**](https://doi.org/10.1016/j.camwa.2017.12.023)  
+*Computers and Mathematics with Applications*, 2018, 75, 534–546  
+**Clarivate Analytics Impact Factor 2018:** 2.811  
+**SJR 2018:** 0.99 — **Category:** Q1
+
+### 2017
+**F. Karami, K. Sadik, L. Ziad**  
+[**A splitting algorithm for a novel regularization of Perona-Malik and application to image restoration**](https://doi.org/10.1186/s13634-017-0482-z)  
+*EURASIP Journal on Advances in Signal Processing*, 2017, 2017(1), 46  
+**Clarivate Analytics Impact Factor 2017:** 1.746  
+**SJR 2018:** 0.322 — **Category:** Q2
 
 ---
 
-- [F. Bendaida](https://fbendaida.github.io/), [F. Karami](http://este.uca.ma/mmsc/Karami.html), D. Meskine. [**Nonlocal p-Laplacian involving a nonlinear fractional reaction-diffusion system applied to image restoration**](https://doi.org/10.1016/j.camwa.2023.10.001).*Computers & Mathematics with Applications*, 2023, vol. 152, pp. 56–66.  
-  **Clarivate Analytics Impact Factor 2023:** 2.9  
-  **SJR 2023:** 0.86 — **Category:** Q1
+## 🎤 Communications Scientifiques
+
+### 2024
+**ZIAD Lamia, O. Oubbih, F. Karami and F. Sniba**  
+[**A Nonlocal Model For Image Restoration Corrupted by Multiplicative Noise**]()
+
+*6th Workshop on Mathematics, Computer Science, and Modeling of Complex Systems: Artificial Intelligence and Applications*  
+9-10 Juillet 2024, EST Essaouira, Maroc
+
+### 2022
+**ZIAD Lamia**  
+[**Nonlocal p(X)-Laplacian for Multiplicative Noise**]()
+
+*4th International Conference on Research in Applied Mathematics and Computer Science (ICRAMCS)*  
+24-26 Mars 2022, Casablanca, Maroc
+
+### 2019
+**ZIAD Lamia, F. Karami and D. Meskine**  
+[**A non local variable exponent to remove Multiplicative Noise**]()
+
+*Workshop International Modélisation et Calcul numérique pour la Biomathématique*  
+8-10 Juillet 2019, EST Essaouira, Maroc
+
+### 2017
+**ZIAD Lamia, F. Karami and D. Meskine**  
+[**An Efficient Algorithm for Reconstruction of Images Corrupted by Some Multiplicative Noises**]()
+
+*Workshop International sur les Mathématiques et Applications (WIMAL7)*  
+21 Octobre 2017, Mohammedia, Maroc
+
+**ZIAD Lamia, F. Karami and D. Meskine**  
+[**A Variable Exponent Model for Restoration of Poissonian Images**]()
+
+*The Second International Conference On Modeling and Scientific Computing In Mathematical Engineering*  
+17-20 Avril 2017, Marrakech, Maroc
+
+### 2016
+**ZIAD Lamia, F. Karami and D. Meskine**  
+[**An Efficient Algorithm for Restoration of Poissonian Images with some nonstandard models**]()
+
+*Workshop on Complex Systems and applications*  
+15 Décembre 2016, ESTE Essaouira, Maroc
+
+### 2015
+**ZIAD Lamia**  
+[**Etude comparative de quelques regularisations de Perona-Malik**]()
+
+*Conférence Internationale de Mathématiques Appliquées*  
+10-12 Novembre 2015, Safi, Maroc
 
 ---
 
-- [F. Bendaida](https://fbendaida.github.io/). [**A Nonlocal Model for Reconstructing Images Corrupted by Cauchy Noise**](https://doi.org/10.2478/mjpaa-2023-0003). *Moroccan Journal of Pure and Applied Analysis*, 2023, vol. 9, no. 1, pp. 48–64.  
-  **SJR 2023:** 0.33 — **Category:** Q3
+## 🔬 Travaux en Cours et Soumis
+
+### En Préparation
+- **L. Ziad, F. Karami, O. Oubbih**  
+  **Hybrid DIP-Variational Model for SAR Image Despeckling**  
+  *En préparation pour IEEE Transactions on Image Processing*
+
+- **L. Ziad, F. Sniba**  
+  **Adaptive Nonlocal Regularization for Medical Ultrasound Imaging**  
+  *En préparation pour Medical Image Analysis*
+
+### Soumis
+- **L. Ziad, F. Karami**  
+  **Deep Image Prior with Nonlocal Constraints for Multiplicative Noise Removal**  
+  *Soumis à SIAM Journal on Imaging Sciences*
 
 ---
 
-### 📚 Chapitres d’ouvrage
+## 📊 Indicateurs de Recherche
 
-- A. Atlas, J. Attmani, [F. Bendaida](https://fbendaida.github.io/), [F. Karami](http://este.uca.ma/mmsc/Karami.html). **A Novel Dynamic Threshold Model for Image Restoration**. Chapitre accepté, Springer Nature.
+- **Publications totales:** 5 articles dans des revues internationales
+- **Communications:** 7 présentations dans des conférences internationales
+- **Collaborations:** Réseau de recherche national et international
+- **Expertise:** Traitement d'images, modèles variationnels, optimisation
 
-- N. Elhaya, [F. Bendaida](https://fbendaida.github.io/), F. Sniba, Y. Barkouch. **Modelling Slow Sand Filtration for Wastewater Reuse: An Innovative Approach to Enhancing Climate Resilience**. Chapitre accepté, Springer Nature.
-
----
-
-### 📝 Travaux en cours / Soumis
-
-- [F. Bendaida](https://fbendaida.github.io/), [F. Karami](http://este.uca.ma/mmsc/Karami.html), D. Meskine, K. Sadik, L. Ziad. **An Adaptive Total Variation Deep Image Prior Model for Reconstructing Images Corrupted by Cauchy Noise**, Soumis.
-
-- [F. Bendaida](https://fbendaida.github.io/), [F. Karami](http://este.uca.ma/mmsc/Karami.html), D. Meskine, K. Sadik, L. Ziad. **A nonlinear and nonlocal Perona–Malik system involving fractional diffusion for image restoration**, Soumis.
-
-- [F. Bendaida](https://fbendaida.github.io/), [F. Karami](http://este.uca.ma/mmsc/Karami.html), D. Meskine, K. Sadik, L. Ziad. **A Nonlinear Second Order Problem Involving Nonlocal Diffusion for Image Processing**, Soumis.
-
-- [F. Bendaida](https://fbendaida.github.io/), [F. Karami](http://este.uca.ma/mmsc/Karami.html), D. Meskine. **Image Super-Resolution by a Degenerate Nonlocal Model**, En cours.
-
-- [F. Bendaida](https://fbendaida.github.io/), [F. Karami](http://este.uca.ma/mmsc/Karami.html), D. Meskine. **Nonlocal p-Laplacian Model for Mixed Noise Removal Involving Cauchy Noise**, En cours.
-
-
-### Communications:
-* [F.Bendaida](https://fbendaida.github.io/), [F.Karami](http://este.uca.ma/mmsc/Karami.html) and D.Meskine [**A nonlocal fourth-order model for image denoising**](https://cimaia.sciencesconf.org/?lang=fr), 1 st International Conference on Mathematical Modeling and Artificial Intelligence IC2MAI'25 Mohammedia - Maroc, 19 Juin 2025.
-* [F.Bendaida](https://fbendaida.github.io/), [F.Karami](http://este.uca.ma/mmsc/Karami.html) and D.Meskine **An Adaptive Total Variation Deep Image Prior Model for Reconstructing Images Corrupted by Cauchy Noise**, 7ème Workshop Mathématiques, Informatique et Modélisation des systèmes complexes Essaouira - Maroc, 21 Février 2025.
-* [F.Bendaida](https://fbendaida.github.io/), [F.Karami](http://este.uca.ma/mmsc/Karami.html) and D.Meskine **A class of degenerate nonlocal models applied in image restoration**, Workshop 1 – Modèles mathématiques : Etat de l’art, EDP et TOM Essaouira - Maroc, 24 Novembre 2023
-* [F.Bendaida](https://fbendaida.github.io/), [F.Karami](http://este.uca.ma/mmsc/Karami.html) and D.Meskine **Nonlocal p-Laplacian model for mixed noise removal involving Cauchy noise**, 5ème Workshop Mathématiques, Informatique et Modélisation des systèmes complexes Essaouira - Maroc, 14,15 Juillet 2023.
-* [F.Bendaida](https://fbendaida.github.io/), [F.Karami](http://este.uca.ma/mmsc/Karami.html) and D.Meskine **Nonlocal p-Biharmonic model for Cauchy noise removal**, 4ème Workshop Mathématiques, Informatique et Modélisation des systèmes complexes Essaouira - Maroc, 16,17 Décembre 2022.
-* [F.Bendaida](https://fbendaida.github.io/), [F.Karami](http://este.uca.ma/mmsc/Karami.html) and D.Meskine [**A Nonlocal Model For Reconstructing Images Corrupted By Cauchy Noise**](https://icramcs2022.sciencesconf.org/data/icramcs2022_paper_375.html), Fourth Edition of the International Conference on Research in Applied Mathematics and Computer Science ICRAMCS 2022 Casablanca - Maroc, 24-26 Mars 2022
+<div style="text-align: center; margin-top: 2rem;">
+  <a href="https://scholar.google.com/citations?user=VOTRE_ID" class="btn btn--primary" target="_blank">
+    📚 Voir mon profil Google Scholar
+  </a>
+  <a href="https://orcid.org/0000-0000-0000-0000" class="btn btn--info" target="_blank">
+    🔬 Profil ORCID
+  </a>
+</div>
