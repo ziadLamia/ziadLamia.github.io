@@ -7,17 +7,29 @@ author_profile: true
 
 ### Mes supports pédagogiques
 
-
 ---
+
 <details>
-<summary>📚 Algorithmique</summary>
+<summary>📚 Réseaux Informatiques</summary>
 
 <ul>
-  <li>📄 <a href="https://fBendaida.github.io/files/algo1.pdf">Les éléments de base d’un algorithme</a> | <a href="https://fBendaida.github.io/files/Travaux%20Dirig%C3%A9s%201.pdf">TD</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/algo2.pdf">Les structures alternatives et répétitives</a> | <a href="https://fBendaida.github.io/files/Travaux%20Dirig%C3%A9s2.pdf">TD</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/algo3.pdf">Les tableaux et les fonctions</a> | <a href="https://fBendaida.github.io/files/Travaux%20Dirig%C3%A9s%203.pdf">TD 3</a> | <a href="https://fBendaida.github.io/files/Travaux%20Dirig%C3%A9s%204.pdf">TD 4</a></li>
+  <li>📘 <strong>Contenu du module</strong></li>
+  <ul>
+    <li>Architecture OSI / TCP-IP</li>
+    <li>Adressage IP, sous-réseaux, VLSM</li>
+    <li>Routage statique & dynamique</li>
+    <li>Configuration Cisco (Switch / Routeur)</li>
+  </ul>
+
+  <li>📄 <strong>Supports disponibles</strong></li>
+  <ul>
+    <li>📘 <a href="assets/cours/reseaux/Cours_Reseaux.pdf">Cours Réseaux</a></li>
+    <li>📄 <a href="assets/cours/reseaux/TD1_Reseaux.pdf">TD 1</a></li>
+    <li>📄 <a href="assets/cours/reseaux/TD2_Reseaux.pdf">TD 2</a></li>
+    <li>🧪 <a href="assets/cours/reseaux/TP1_Reseaux.pdf">TP 1</a></li>
+    <li>🧪 <a href="assets/cours/reseaux/TP2_Reseaux.pdf">TP 2</a></li>
+    <li>🧪 <a href="assets/cours/reseaux/TP3_Reseaux.pdf">TP 3</a></li>
+  </ul>
 </ul>
 
 </details>
@@ -25,99 +37,34 @@ author_profile: true
 ---
 
 <details>
-<summary>📚 Programmation en C</summary>
+<summary>📚 Bases de Données (SQL / Oracle / PL/SQL)</summary>
 
 <ul>
-  <li>📄 <a href="https://fBendaida.github.io/files/c1.pdf">Introduction</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/c2.pdf">La syntaxe du langage C</a> | <a href="https://fBendaida.github.io/files/TP3.pdf">TP</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/c3.pdf">Les tableaux et les fonctions</a> | <a href="https://fBendaida.github.io/files/TP5.pdf">TP</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/c4.pdf">Les pointeurs</a> | <a href="https://fBendaida.github.io/files/TP6.pdf">TP</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/c5.pdf">Les chaînes de caractères</a> | <a href="https://fBendaida.github.io/files/TP7.pdf">TP</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/c6.pdf">Les structures</a> | <a href="https://fBendaida.github.io/files/TP8.pdf">TP</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/c7.pdf">Les fichiers</a> | <a href="https://fBendaida.github.io/files/TP9.pdf">TP</a></li>
-</ul>
+  <li>📘 <strong>Contenu du module</strong></li>
+  <ul>
+    <li>SQL : SELECT, JOIN, GROUP BY</li>
+    <li>Fonctions SQL</li>
+    <li>Modèle relationnel et contraintes</li>
+    <li>PL/SQL : procédures, fonctions</li>
+  </ul>
 
-</details>
+  <li>📄 <strong>Supports disponibles</strong></li>
+  <ul>
+    <li>📘 <a href="assets/cours/bd/Cours_SQL_Oracle.pdf">Cours SQL Oracle</a></li>
+    <li>📘 <a href="assets/cours/bd/Cours_SQL_Outils.pdf">Cours Outils BD</a></li>
+    <li>📘 <a href="assets/cours/bd/Cours_SQL_IDSD.pdf">Cours BD Avancées</a></li>
+    <li>📘 <a href="assets/cours/bd/Cours_PLSQL.pdf">Cours PL/SQL</a></li>
 
+    <li>📄 <a href="assets/cours/bd/TD1_SQL.pdf">TD 1</a></li>
+    <li>📄 <a href="assets/cours/bd/TD2_SQL.pdf">TD 2</a></li>
+    <li>📄 <a href="assets/cours/bd/TD3_SQL.pdf">TD 3</a></li>
 
----
-
-<details>
-<summary>📚 Programmation C avancée</summary>
-
-<ul>
-  <li>📄 <a href="https://fBendaida.github.io/files/tpListes.pdf">Atelier : Listes Chaînées en Langage C </a> </li>
-
-  <li>📄 <a href="https://fBendaida.github.io/files/tpPile.pdf">Atelier : Les piles en Langage C </a> </li>
-
-  <li>📄 <a href="https://fBendaida.github.io/files/atelierSD.pdf">Polycopié</a> </li>
-
-</ul>
-
-</details>
-
-
----
-
-
-<details>
-<summary>📚 Programmation en python</summary>
-
-<ul>
-  <li>📄 <a href="https://fBendaida.github.io/files/p1.pdf">Introduction</a> | <a href="https://fBendaida.github.io/files/ptp1.pdf">TP</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/p2.pdf">Les listes et les Tuples</a>  | <a href="https://fBendaida.github.io/files/ptp2.pdf">TP</a></li>
-
-  <li>📄 <a href="https://fBendaida.github.io/files/p3.pdf">Les chaînes de caractères et les dictionnaires</a> | <a href="https://fBendaida.github.io/files/ptp3.pdf">TP</a> </li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/p4.pdf">Les fichiers sous Python</a>  | <a href="https://fBendaida.github.io/files/ptp4.pdf">TP</a></li>
-
-   <li>📄 <a href="https://fBendaida.github.io/files/polypython.pdf">Polycopié</a></li>
-</ul>
-
-</details>
-
-
----
-
-<details>
-<summary>📚 Programmation Orienté Objet java</summary>
-
-<ul>
-  <li>📄 <a href="https://fBendaida.github.io/files/Heritage.pdf">Héritage</a>| <a href="https://fBendaida.github.io/files/TP%20N2 .pdf">TP</a> </li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/collections.pdf">Les collections</a> </li>
-
-  <li>📄 <a href="https://fBendaida.github.io/files/Exception.pdf">Les exceptions</a> | <a href="https://fBendaida.github.io/files/TP%20Exception.pdf">TP</a> </li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/fichiers.pdf">Les fichiers</a> </li>
-  <li>📄 <a href="https://fBendaida.github.io/files/atelier.pdf">Atelier</a></li>
-</ul>
-
-</details>
-
----
-
-
-<details>
-<summary>📚 Java Enterprise Edition </summary>
-
-<ul>
-  <li>📄 <a href="https://fBendaida.github.io/files/jee1.pdf">Introduction à la programmation JEE</a></li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/jee2.pdf">Les servlets</a></li>
-
-<li>📄 <a href="https://fBendaida.github.io/files/jee3.pdf">Java Server Pages</a> </li>
-
-
-  <li>📄 <a href="https://fBendaida.github.io/files/polyjee.pdf">Polycopié</a> </li>
-  
+    <li>🧪 <a href="assets/cours/bd/TP1_SQL.pdf">TP 1</a></li>
+    <li>🧪 <a href="assets/cours/bd/TP2_SQL.pdf">TP 2</a></li>
+    <li>🧪 <a href="assets/cours/bd/TP3_SQL.pdf">TP 3</a></li>
+    <li>🧪 <a href="assets/cours/bd/TP4_SQL.pdf">TP 4</a></li>
+    <li>🧪 <a href="assets/cours/bd/TP1_PLSQL.pdf">TP PL/SQL</a></li>
+  </ul>
 </ul>
 
 </details>
@@ -125,48 +72,111 @@ author_profile: true
 ---
 
 <details>
-<summary>📚 Analyse et conception des systèmes  d’information</summary>
+<summary>📚 Bases de Données Non Relationnelles (MongoDB)</summary>
 
 <ul>
-  <li>📄 <a href="https://fBendaida.github.io/files/merise1.pdf">La méthode Merise </a> </li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/MCD.pdf">MCD</a>  | <a href="https://fBendaida.github.io/files/TDMCD.pdf">TD</a></li>
+  <li>📘 <strong>Contenu du module</strong></li>
+  <ul>
+    <li>Concepts NoSQL</li>
+    <li>Modèle orienté documents</li>
+    <li>Collections & documents</li>
+    <li>Opérations CRUD</li>
+    <li>Pipeline d’agrégation</li>
+    <li>Import/export de données</li>
+  </ul>
 
-<li>📄 <a href="https://fBendaida.github.io/files/MLD.pdf">MLD</a>  | <a href="https://fBendaida.github.io/files/TDMLD.pdf">TD</a></li>
+  <li>📄 <strong>Supports disponibles</strong></li>
+  <ul>
+    <li>📘 <a href="assets/cours/bdMng/Cours_NoSQL.pdf">Cours complet</a></li>
+
+    <li>📄 <a href="assets/cours/bdMng/TD1_MongoDB.pdf">TD 1</a></li>
+
+    <li>🧪 <a href="assets/cours/bdMng/TP1_MongoDB.pdf">TP 1</a></li>
+    <li>🧪 <a href="assets/cours/bdMng/TP2_MongoDB.pdf">TP 2</a></li>
+    <li>🧪 <a href="assets/cours/bdMng/TP3_MongoDB.pdf">TP 3</a></li>
+    <li>🧪 <a href="assets/cours/bdMng/TP4_MongoDB.pdf">TP 4</a></li>
+  </ul>
 </ul>
 
 </details>
-
 
 ---
 
 <details>
-<summary>📚 Système de Gestion de Base de Données</summary>
+<summary>📚 Programmation en Environnement (Algorithmique & R)</summary>
 
 <ul>
-  <li>📄 <a href="https://fBendaida.github.io/files/Sql1.pdf">Introduction</a> </li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/Sql2.pdf">LMD</a> </li>
-  
-  <li>📄 <a href="https://fBendaida.github.io/files/TPSql.pdf">TD/TP</a> </li>
+  <li>📘 <strong>Contenu du module</strong></li>
+  <ul>
+    <li>Algorithmique</li>
+    <li>Introduction au langage R</li>
+    <li>Statistiques & visualisation</li>
+    <li>Modélisation environnementale</li>
+    <li>Analyses écologiques</li>
+  </ul>
+
+  <li>📄 <strong>Supports disponibles</strong></li>
+  <ul>
+    <li>📘 <a href="assets/cours/r/Cours_Algo.pdf">Cours Algo</a></li>
+    <li>📘 <a href="assets/cours/r/Cours_R.pdf">Cours R</a></li>
+
+    <li>🧪 <a href="assets/cours/r/TP1_Algo.pdf">TP 1 — Algorithmique</a></li>
+    <li>🧪 <a href="assets/cours/r/TP2_Algo.pdf">TP 2 — Algorithmique</a></li>
+
+    <li>🧪 <a href="assets/cours/r/TP1_R.pdf">TP 1 — R</a></li>
+    <li>🧪 <a href="assets/cours/r/TP2_R.pdf">TP 2 — R</a></li>
+  </ul>
 </ul>
 
 </details>
 
 ---
 
+<details>
+<summary>📚 Développement Mobile (Kotlin & Jetpack Compose)</summary>
 
-<h3> Encadrement des PFEs:</h3>
-  
 <ul>
-  <li>📄 Plateforme Web Intelligente pour la Détection Automatique de Tumeurs : Intégration d’Algorithmes d’IA et d’Imagerie Médicale</li>
-  
-  <li>📄 LEARNIFY: Plateforme Web et Application Mobile pour l’E-learning en Développement Logiciel</li>
-  
-  <li>📄 Ticketa: Plateforme Web pour la création et l'organisation des événements</li>
-  <li>📄 Application web pour la détection du masque facial</li>
-  <li>📄 Applications Matlab pour la restauration d’images</li>
-  <li>📄 Développement d'une plateforme pour l’analyse des données</li>
+  <li>📘 <strong>Contenu du module</strong></li>
+  <ul>
+    <li>Syntaxe Kotlin</li>
+    <li>POO & classes</li>
+    <li>Jetpack Compose</li>
+    <li>Architecture MVVM</li>
+    <li>Projet Android</li>
+  </ul>
+
+  <li>📄 <strong>Supports disponibles</strong></li>
+  <ul>
+    <li>📘 <a href="assets/cours/kotlin/Cours_Kotlin.pdf">Cours Kotlin</a></li>
+
+    <li>🧪 <a href="assets/cours/kotlin/TP1_Kotlin.pdf">TP 1 — Kotlin</a></li>
+    <li>🧪 <a href="assets/cours/kotlin/TP2_Kotlin.pdf">TP 2 — Kotlin</a></li>
+
+    <li>🧪 <a href="assets/cours/kotlin/TP1_Mob.pdf">TP 1 — Mobile</a></li>
+    <li>🧪 <a href="assets/cours/kotlin/TP2_Mob.pdf">TP 2 — Mobile</a></li>
+    <li>🧪 <a href="assets/cours/kotlin/TP3_Mob.pdf">TP 3 — Mobile</a></li>
+  </ul>
 </ul>
 
+</details>
 
+---
+
+<details>
+<summary>🎓 Formations Organisées</summary>
+
+<ul>
+  <li>⭐ Formation Full Stack Spring/React — 11 Mars 2023  
+      Intervenants : Zakaria Dani, Aymane Daif — Département Math-Info</li>
+
+  <li>⭐ Formation DevOps & Salesforce — 18 Mars 2023  
+      Intervenants : Elquandili, Ssanhaji, Elaasri, Ennouri — Département Math-Info</li>
+
+  <li>⭐ Formation Angular — 30 Mars 2019  
+      Intervenants : Y. Houddas, C. El Garrai — Club ISIL</li>
+</ul>
+
+<p><strong>Lieu :</strong> Amphithéâtre de l’EST Essaouira<br>
+<strong>Organisateurs :</strong> F. Karami & L. Ziad</p>
+
+</details>
