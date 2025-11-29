@@ -82,7 +82,6 @@ redirect_from:
 <details>
   <summary>🎓 <strong>Encadrement des Projets de Fin d’Études</strong></summary>
 
-  <p>Extraits issus du CV : :contentReference[oaicite:1]{index=1}</p>
 
   <ul>
     <li>Site web de consultation médicale – (2018/2019)</li>
@@ -139,7 +138,6 @@ redirect_from:
 
 <details>
   <summary>📢 <strong>Communications</strong></summary>
-  <p>Extraits du CV : :contentReference[oaicite:2]{index=2}</p>
 
   <ul>
     <li>“A Nonlocal Model For Image Restoration…” – Workshop MIMSC, Essaouira (2024)</li>
@@ -170,7 +168,7 @@ redirect_from:
 <details>
   <summary>🎤 <strong>Conférences, Workshops & Manifestations Scientifiques</strong></summary>
 
-  <p>📄 Informations consolidées depuis CV : :contentReference[oaicite:3]{index=3}</p>
+
 
   <ul>
     <li>Membre du comité d’organisation – CIMPA School (2025)</li>
@@ -203,9 +201,9 @@ redirect_from:
   <summary>🌍 <strong>Langues</strong></summary>
   <ul>
     <li>Arabe : ⭐⭐⭐⭐⭐</li>
-    <li>Français : ⭐⭐⭐⭐⭐</li>
-    <li>Anglais : ⭐⭐⭐⭐☆</li>
-    <li>Espagnol : ⭐⭐⭐☆☆</li>
+    <li>Français : ⭐⭐⭐⭐☆</li>
+    <li>Anglais : ⭐⭐⭐☆☆</li>
+    <li>Espagnol : ⭐⭐☆☆☆</li>
   </ul>
 </details>
 

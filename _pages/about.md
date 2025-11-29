@@ -38,16 +38,6 @@ J’exerce au sein de l’Enseignement Supérieur depuis 2018 et j’allie **rec
 
 ---
 
-### 📊 Chiffres clés académiques
-
-- **10+** publications scientifiques internationales *(Q1–Q3)*  
-- **15+** communications et présentations dans des conférences internationales  
-- **20+** événements académiques & formations organisés  
-- **Encadrement de nombreux Projets de Fin d’Études (GI & IDSD)**  
-- Participation à plusieurs **ateliers pédagogiques** et commissions institutionnelles  
-
----
-
 ### 🤝 Collaborations & intérêts
 
 Passionnée par la recherche interdisciplinaire et l’innovation pédagogique, je suis ouverte à toute collaboration liée à :  
