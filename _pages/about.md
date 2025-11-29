@@ -50,7 +50,7 @@ Passionnée par la recherche interdisciplinaire et l’innovation pédagogique, 
 
 ### 🔗 Liens rapides
 
-- 📖 [Explorer mes publications](recherche.html)  
-- 📚 [Voir mes enseignements](enseignement.html)  
-- 📝 [Télécharger mon CV](Cv_Ziad2025.pdf)
+- 📖 [Explorer mes publications](/publications/)  
+- 📚 [Voir mes enseignements](/teaching/)  
+- 📝 [Télécharger mon CV](/Cv_Ziad2025.pdf)
 
