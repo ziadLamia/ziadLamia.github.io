@@ -6,27 +6,38 @@ redirect_from:
   - /about/
   - /about.html
 ---
-## Bonjour, un peu sur moi:
 
-Je suis Dr Fatiha BENDAIDA, professeure de l’enseignement Secondaire Qualifiant de l’informatique, passionnée par la pédagogie, la recherche, la programmation et les bases de données.
-
-Titulaire d’un doctorat en informatique et mathématiques appliquées, j’enseigne aujourd’hui aussi bien dans le secondaire que dans l’enseignement supérieur, notamment en classes préparatoires au BTS et à l’université.
-
-### Thèmes de recherche:
-
-* Traitement et reconstruction des images
-* Optimisation et modélisation mathématique
-* Intelligence artificielle
-
-### Intérêts de recherche :
-
-Mes travaux se concentrent sur le traitement d’images via les équations aux dérivées partielles (EDP), en particulier pour le débruitage, la super-résolution et la décomposition d’images.
-
-Je m’intéresse aux différents types de bruit (Cauchy, additif gaussien, bruit mixte) et aux méthodes numériques avancées comme le gradient accéléré de Nesterov, les modèles à ordre supérieur, le p-Laplacien à exposant variable, ainsi que les approches non locales et la modélisation de textures.
-
-Mes recherches s’inscrivent aussi dans le domaine de l’intelligence artificielle, avec une utilisation de réseaux de neurones convolutifs (CNN) et d’architectures profondes comme ResNet et Deep Image Prior (DIP), pour le traitement d’images guidé par l’apprentissage profond.
+## Dr. Lamia ZIAD  
+**Enseignante-Chercheuse en Informatique & Mathématiques Appliquées**  
+*EST Essaouira - Université Cadi Ayyad*
 
 ---
-Toujours curieuse et engagée dans la recherche et la transmission des savoirs, je participe régulièrement à des activités pédagogiques, des formations, et des projets numériques.
 
-Bienvenue sur ma page personnelle !
+### 👩‍🏫 Profil académique
+
+Enseignante-chercheuse spécialisée en traitement d'images et mathématiques appliquées. Mes activités combinent recherche académique, enseignement supérieur et encadrement d'étudiants.
+
+### 🔬 Axes de recherche
+
+- **Traitement d'images** : Restauration d'images SAR, débruitage multiplicatif
+- **Modèles mathématiques** : EDP, modèles variationnels non locaux, p-Laplacien
+- **Optimisation numérique** : Méthodes ADMM, AOS, algorithmes de splitting
+- **IA & Apprentissage** : Deep Image Prior, approches non supervisées
+
+### 🎯 Projets en cours
+
+Développement de modèles hybrides combinant méthodes variationnelles et apprentissage profond pour la restauration d'images médicales et de télédétection. Applications aux images ultrasonores et SAR.
+
+### 📊 Chiffres clés
+
+- 10+ publications scientifiques (Q1-Q3)
+- 15+ communications internationales  
+- 20+ événements scientifiques organisés
+- Encadrement de multiples projets PFE
+- Organisation de formations techniques
+
+---
+
+*Passionnée par la transmission des savoirs et l'avancement de la recherche, je suis toujours ouverte aux collaborations académiques et projets innovants.*
+
+[📖 Explorer mes publications](recherche.html) | [📚 Voir mes enseignements](enseignement.html) | [📄 Télécharger mon CV](cv.html)
