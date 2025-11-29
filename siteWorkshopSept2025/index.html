@@ -11,8 +11,9 @@
 <body>
     <!-- Le contenu HTML  -->
 
-<div class="logo-header container">
+    <div class="logo-header container">
         <img src="assets/img/1.png" alt="EST Essaouira Logo">
+        <img src="assets/img/ensaM.png" alt="ENSA Marrakech Logo" style="height: 80px;"> <!-- Ajoutez cette ligne -->
         <img src="assets/img/5.png" alt="Université Cadi Ayyad Logo">
     </div>
     
@@ -55,12 +56,26 @@
         <div class="container">
             <h2 class="section-title">Speakers</h2>
             <div class="speakers-grid">
+                
+                <!-- ====== Un conférencier ====== -->
+
                 <!-- Tri alphabétique par nom de famille -->
+                
                 <div class="speaker-card">
                     <div class="speaker-image" style="background-image: url('assets/img/alpar.gif')"></div>
                     <div class="speaker-info">
                         <h3 class="speaker-name">Alpár R. Mészáros</h3>
                         <p>Durham University, UK</p>
+
+                        <div class="speaker-presentation">
+                          <h4 class="presentation-title">From the porous medium equation to the Hele-Shaw flow: an optimal transport perspective</h4>
+                          <div class="abstract">
+                            <p class="abstract-text">
+                            In this talk we will revisit the classical problem on the Hele—Shaw or incompressible limit for nonlinear degenerate diffusion equations. We will demonstrate that the theory of optimal transport via gradient flows can bring new perspectives, when it comes to considering confining potentials or nonlocal drift terms within the problem. In particular, we provide quantitative convergence rates in the 2-Wasserstein distance for the singular limit, which are global in time thanks to the contractive property arising from the external potentials. The talk will be based on a joint work with Noemi David and Filippo Santambrogio.
+                            </p>
+                            <button class="abstract-toggle">Read Abstract</button>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -69,6 +84,16 @@
                     <div class="speaker-info">
                         <h3 class="speaker-name">José Carrillo</h3>
                         <p>University of Oxford, UK</p>
+                        
+                        <div class="speaker-presentation">
+                          <h4 class="presentation-title">Aggregation-Diffusion Equations for Collective Behaviour in the Sciences</h4>
+                          <div class="abstract">
+                            <p class="abstract-text">
+                            Many phenomena in the life sciences, ranging from the microscopic to macroscopic level, exhibit surprisingly similar structures. Behaviour at the microscopic level, including ion channel transport, chemotaxis, and angiogenesis, and behaviour at the macroscopic level, including herding of animal populations, motion of human crowds, and bacteria orientation, are both largely driven by long-range attractive forces, due to electrical, chemical or social interactions, and short-range repulsion, due to dissipation or finite size effects. Various modelling approaches at the agent-based level, from cellular automata to Brownian particles, have been used to describe these phenomena. An alternative way to pass from microscopic models to continuum descriptions requires the analysis of the mean-field limit, as the number of agents becomes large. All these approaches lead to a continuum kinematic equation for the evolution of the density of individuals known as the aggregation-diffusion equation. This equation models the evolution of the density of individuals of a population, that move driven by the balances of forces: on one hand, the diffusive term models diffusion of the population, where individuals escape high concentration of individuals, and on the other hand, the aggregation forces due to the drifts modelling attraction/repulsion at a distance. The aggregation-diffusion equation can also be understood as the steepest-descent curve (gradient flow) of free energies coming from statistical physics. Significant effort has been devoted to the subtle mechanism of balance between aggregation and diffusion. In some extreme cases, the minimisation of the free energy leads to partial concentration of the mass. Aggregation-diffusion equations are present in a wealth of applications across science and engineering. Of particular relevance is mathematical biology, with an emphasis on cell population models. The aggregation terms, either in scalar or in system form, is often used to model the motion of cells as they concentrate or separate from a target or interact through chemical cues. The diffusion effects described above are consistent with population pressure effects, whereby groups of cells naturally spread away from areas of high concentration. This talk will give an overview of the state of the art in the understanding of aggregation-diffusion equations, and their applications in mathematical biology.
+                            </p>
+                            <button class="abstract-toggle">Read Abstract</button>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -77,6 +102,16 @@
                     <div class="speaker-info">
                         <h3 class="speaker-name">Serge Dumont</h3>
                         <p>University of Nîmes, France</p>
+                        
+                        <div class="speaker-presentation">
+                          <h4 class="presentation-title"></h4>
+                          <div class="abstract">
+                            <p class="abstract-text">
+                              
+                            </p>
+                            <button class="abstract-toggle">Read Abstract</button>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -85,6 +120,16 @@
                     <div class="speaker-info">
                         <h3 class="speaker-name">Olivier Goubet</h3>
                         <p>University of Lille, France</p>
+                        
+                        <div class="speaker-presentation">
+                          <h4 class="presentation-title">Global attractor for weakly damped nonlinear parametric Klein-Gordon-Schrödinger system</h4>
+                          <div class="abstract">
+                            <p class="abstract-text">
+                            We consider a KGS system as an infinite-dimensional dynamical system in the energy space $E=H^1\times H^1\times L^2$. Despite the fact that there is no smoothing effect in finite time for the flow of solutions, we prove that the global attractor $\mathcal{A}$ for this system is a compact finite-dimensional subset of $H^2\times H^2\times H^2$.
+                            </p>
+                            <button class="abstract-toggle">Read Abstract</button>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -93,14 +138,62 @@
                     <div class="speaker-info">
                         <h3 class="speaker-name">Noureddine Igbida</h3>
                         <p>University of Limoges, France</p>
+                        
+                        <div class="speaker-presentation">
+                          <h4 class="presentation-title">Congested Motion PDEs for Two Typed Populations</h4>
+                          <div class="abstract">
+                            <p class="abstract-text">
+                            We are introducing a new class of cross-diffusion systems to model congestion phenomena in pedestrian dynamics. This approach is based on a steepest descent algorithm that incorporates a minimal flow process to measure the proximal work. The goal is to minimize the system's internal energy. We will present and discuss a few comparisons with existing cross-diffusion systems that use the Wasserstein distance.
+                              
+                            </p>
+                            <button class="abstract-toggle">Read Abstract</button>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
+                <div class="speaker-card">
+                    <div class="speaker-image"
+                         style="background-image: url('assets/img/LAAMRI.png'); 
+                                background-size: cover; 
+                                background-position: center; 
+                                background-repeat: no-repeat;
+                                height: 200px;">
+                    </div>
+            
+                    <div class="speaker-info">
+                        <h3 class="speaker-name">El-Haj Laamri</h3>
+                        <p>University of Lorraine, France. Currently resident at UM6P-IAS (Morocco)</p>
+                        
+                        <div class="speaker-presentation">
+                          <h4 class="presentation-title">Global existence for reaction-diffusion systems with control of total mass : a survey</h4>
+                          <div class="abstract">
+                            <p class="abstract-text">
+                            Models issued from ecology, chemical reactions and several other application fields lead to semi-linear parabolic equations with super-linear growth. Many of these systems naturally satisfy the following two properties : (P) : the positivity of the solutions is preserved as long as they exist ; (M) : the total mass of the components is controlled (or even preserved). It turns out that the structure (P)+(M) does not keep the solution from blowing up in L∞- norm, even in finite time. Thus, some growth restrictions and extra structure on the reactive terms are needed for global existence of classical solutions. This issue has been intensively studied in the semi-linear case and the initial data are bounded. However, the situation is quite more complicated for nonlinear diffusion, more general nonlinearities and initial data of low regularity. So, it is necessary to deal with weak solutions if one expects global existence. In this talk, we will give a general overview on systems verifying (P) and (M). In particular, we will present some results obtained in collaboration with B. Perthame [1], M. Pierre [2, 4, 3] and M. Daoud and A. Baalal [5].
+                            </p>
+                            <button class="abstract-toggle">Read Abstract</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="speaker-card">
                     <div class="speaker-image" style="background-image: url('assets/img/benoit.jpeg')"></div>
                     <div class="speaker-info">
                         <h3 class="speaker-name">Benoit Perthame</h3>
                         <p>University of Sorbonne, France</p>
+                        
+                        <div class="speaker-presentation">
+                          <h4 class="presentation-title">
+                              Modèles mathématiques pour les tissus vivants et problèmes de frontière libre</h4>
+                          <div class="abstract">
+                            <p class="abstract-text">
+                            La croissance des tissus vivants, tels que les tumeurs solides par exemple, peut être décrite à différentes échelles, de la cellule à l'organne.  Pour un grand nombre de cellules, une approche de  mécanique des fluides a été proposée par les biomécaniciens. Nous ferons le point sur plusieurs approches.
+                            Ensuite, nous considèrons le cas où le tissu est vu comme un milieu poreux.  Nous considèrerons la limite incompressible, i.e. l'asymptotique Hele-Shaw passant d'une densité de cellules à une frontière libre dans la limite de lois de pression raide. Cette limite  ouvre la question de l'apparition de régimes instables.
+                            </p>
+                            <button class="abstract-toggle">Read Abstract</button>
+                          </div>
+                        </div>
                     </div>
                 </div>
 
@@ -109,6 +202,16 @@
                     <div class="speaker-info">
                         <h3 class="speaker-name">Françisco Silva</h3>
                         <p>University of Limoges, France</p>
+                        
+                        <div class="speaker-presentation">
+                          <h4 class="presentation-title">Mean-Field Models and Collective Dynamics</h4>
+                          <div class="abstract">
+                            <p class="abstract-text">
+                            In this talk we present a new general approach for the numerical analysis of stable equilibria to second order mean field games systems in cases where the uniqueness of solutions may fail. For the sake of simplicity, we focus on a simple stationary case. We propose an abstract framework to study these solutions by reformulating the mean field game system as an abstract equation in a Banach space. In this context, stable equilibria turn out to be regular solutions to this equation, meaning that the linearized system is well-posed. We provide three applications of this property, we study the sensitivity analysis of stable solutions, establish error estimates for their finite element  approximations, and prove the local converge of Newton’s method in infinite dimensions.
+                            </p>
+                            <button class="abstract-toggle">Read Abstract</button>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,7 +224,7 @@
             <div class="committee-grid">
 
                 <div class="committee-member">
-                    <div class="member-name">José CARILLO</div>
+                    <div class="member-name">José CARRILLO</div>
                     <div class="member-affiliation">Mathematical Institute, Oxford University</div>
                 </div>
 
@@ -205,7 +308,11 @@
                 </div>
                 <div class="committee-member">
                     <div class="member-name">Y. Barkouch</div>
-                    <div class="member-affiliation">Université Cadi Ayyad, EST Essaouira</div>
+                    <div class="member-affiliation">Université Cadi Ayyad, FST Marrakech</div>
+                </div>
+                <div class="committee-member">
+                    <div class="member-name">A. Bekkari</div>
+                    <div class="member-affiliation">Université Cadi Ayyad, ENSA Marrakech</div>
                 </div>
                 <div class="committee-member">
                     <div class="member-name">F. Bendaida</div>
@@ -238,7 +345,11 @@
                 </div>
                 <div class="committee-member">
                     <div class="member-name">N. Moussaid</div>
-                    <div class="member-affiliation">FST Mohammedia, Université Hassan II Mohammedia</div>
+                    <div class="member-affiliation">Université Hassan II Mohammedia, FST Mohammedia</div>
+                </div>
+                <div class="committee-member">
+                    <div class="member-name">M. Oumoun</div>
+                    <div class="member-affiliation">Université Cadi Ayyad, ENSA Marrakech</div>
                 </div>
                 <div class="committee-member">
                     <div class="member-name">K. Sadik</div>
@@ -255,6 +366,128 @@
             </div>
         </div>
     </section>
+    
+    <section id="program">
+      <div class="container">
+        <h2 class="section-title">Conference Program</h2>
+
+        <!-- Thursday -->
+        <div class="program-day">
+          <h3>Thursday, September 25, 2025</h3>
+
+          <div class="time-slot">
+            <span class="time">08:30 – 09:00</span>
+            <span class="event">Registration & Welcome Coffee</span>
+          </div>
+
+          <div class="time-slot plenary">
+            <span class="time">09:00 – 10:00</span>
+            <div class="event"><strong>Plenary Lecture 1:</strong> José Carrillo</div>
+          </div>
+
+          <div class="time-slot">
+            <span class="time">10:00 – 10:30</span>
+            <span class="event">Coffee Break</span>
+          </div>
+
+          <div class="time-slot plenary">
+            <span class="time">10:30 – 11:30</span>
+            <div class="event"><strong>Plenary Lecture 2:</strong> Alpár R. Mészáros</div>
+          </div>
+
+          <div class="time-slot plenary">
+            <span class="time">11:30 – 12:30</span>
+            <div class="event"><strong>Plenary Lecture 3:</strong> Francisco Silva</div>
+          </div>
+
+          <div class="time-slot">
+            <span class="time">12:30 – 14:00</span>
+            <span class="event">Lunch</span>
+          </div>
+
+          <div class="time-slot plenary">
+            <span class="time">14:00 – 15:00</span>
+            <div class="event"><strong>Plenary Lecture 4:</strong> El Haj Laamri</div>
+          </div>
+
+          <div class="time-slot plenary">
+            <span class="time">15:00 – 16:00</span>
+            <div class="event"><strong>Plenary Lecture 5:</strong> Benoît Perthame</div>
+          </div>
+
+          <div class="time-slot">
+            <span class="time">16:00 – 16:30</span>
+            <span class="event">Coffee Break</span>
+          </div>
+
+          <div class="parallel-session">
+            <h4>16:30 – 18:30 Parallel Technical Sessions</h4>
+            <h3>Technical Session A</h3>
+            <ul>
+              <li>Abdellatif YASSIR – Existence of Weak Solutions for (p(x), q(x))-Laplacian-like Systems</li>
+              <li>Abdelmajid El Mourabit – A Nonlinear PDE Framework with Automatic Parameter Identification for Image Restoration</li>
+              <li>Az-edine Abdelghani – Existence and uniqueness of renormalized solutions for Fractional Elliptic Equations with Measure Data</li>
+              <li>Badr ELMANSOURI – Reflected BSDEs with default time and irregular obstacles</li>
+              <li>Fatiha Bendaida – A Nonlocal and nonlinear variational model for denoising images under mixed noise involving Cauchy noise</li>
+              <li>EL GHALI YOUSSEF – Fractional Laplacian problem with nonlinear singular terms</li>
+              <li>Inssaf RAISS – On the Qualitative Analysis of Radial Self-Similar Solutions for the Nonlinear Chipot-Weissler Equation</li>
+            </ul>
+          </div>
+
+          <div class="parallel-session">
+              <h3>Technical Session B</h3>
+            <ul>
+              <li>Hilal Mouna – Optimum Design of Slip Zones in 2D Lubricated Systems with Tresca Slip Boundary Conditions</li>
+              <li>Mouad KLAI – Simulation of transformation-diffusion processes in complex geometries</li>
+              <li>Omar Rhouni – New numerical method for solving the general Hermite polynomial interpolation problem</li>
+              <li>Youness Elmaddah – Algorithmic Thinking and its Fundamental Characteristics</li>
+              <li>Youssef El Kouabli – d-distance chromatic number of distance graphs D(1,t)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Friday -->
+        <div class="program-day">
+          <h3>Friday, September 26, 2025</h3>
+
+          <div class="time-slot plenary">
+            <span class="time">08:30 – 09:00</span>
+            <div class="event"><strong>Invited Talk:</strong> Guy Parker</div>
+          </div>
+
+          <div class="time-slot plenary">
+            <span class="time">09:00 – 10:00</span>
+            <div class="event"><strong>Plenary Lecture 6:</strong> Noureddine Igbida</div>
+          </div>
+
+          <div class="time-slot">
+            <span class="time">10:00 – 10:30</span>
+            <span class="event">Coffee Break</span>
+          </div>
+
+          <div class="time-slot plenary">
+            <span class="time">10:30 – 11:30</span>
+            <div class="event"><strong>Plenary Lecture 7:</strong> Olivier Goubet</div>
+          </div>
+
+          <div class="time-slot plenary">
+            <span class="time">11:30 – 12:30</span>
+            <div class="event"><strong>Plenary Lecture 8:</strong> Serge Dumont</div>
+          </div>
+
+          <div class="parallel-session">
+            <h4>12:30 – 13:30 Technical Session C</h4>
+            <ul>
+              <li>Abderrazak CHRIFI – Mathematical and Numerical Analysis of the Nonlinear Schrödinger Equation with a Point Defect</li>
+              <li>Jamal Attmani – Image Restoration via Optimal Control of Nonlinear Fractional Systems</li>
+              <li>Sabah Kaouri – AI-Learned Absorbing Boundaries in Wave Propagation</li>
+              <li>Meriem Ezzeroual – Parabolic Equations with Singular Terms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!--
     <section id="program">
       <div class="container">
@@ -764,8 +997,34 @@
     
     <!-- Font Awesome for icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+    // Fonction pour toggle les abstracts
+    function toggleAbstract(button) {
+        const abstractDiv = button.parentElement;
+        const abstractText = abstractDiv.querySelector('.abstract-text');
+        const isVisible = abstractText.style.display === 'block';
+        
+        abstractText.style.display = isVisible ? 'none' : 'block';
+        button.textContent = isVisible ? 'Read Abstract' : 'Hide Abstract';
+        
+        // Ajouter/retirer la classe expanded
+        abstractDiv.classList.toggle('expanded', !isVisible);
+    }
 
-
-    <script src="assets/js/script.js"></script>
+    // Initialisation au chargement de la page
+    document.addEventListener('DOMContentLoaded', function() {
+        // Cacher tous les abstracts au chargement
+        document.querySelectorAll('.abstract-text').forEach(text => {
+            text.style.display = 'none';
+        });
+        
+        // Configurer les boutons
+        document.querySelectorAll('.abstract-toggle').forEach(button => {
+            button.onclick = function() {
+                toggleAbstract(this);
+            };
+        });
+    });
+    </script>
 </body>
 </html>

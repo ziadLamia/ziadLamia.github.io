@@ -28,16 +28,14 @@
         
         .logo-header {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            gap: 2rem;
             padding: 1rem 0;
-            background-color: white;
-            border-bottom: 1px solid #eee;
         }
-        
+
         .logo-header img {
             height: 80px;
-            max-width: 100%;
             object-fit: contain;
         }
         
@@ -179,12 +177,14 @@
             transform: translateY(-10px);
         }
         
-        .speaker-image {
-            height: 200px;
-            background-color: #eee;
-            background-size: cover;
-            background-position: center;
-        }
+.speaker-image {
+    height: 200px !important;
+    min-height: 200px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    border: 1px solid #ddd !important; /* Temporaire pour debug */
+}
         
         .speaker-info {
             padding: 1.5rem;
@@ -624,4 +624,70 @@
     .beamer-download-section .btn {
         width: 100%;
     }
+    .speaker-card {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .speaker-image {
+      width: 120px;
+      height: 120px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+    }
+
+    .speaker-info {
+      flex: 1;
+    }
+
+    /* Cacher les abstracts par défaut */
+    .abstract-text {
+        display: none;
+        font-size: 0.9rem;
+        color: #666;
+        line-height: 1.5;
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        background-color: #f8f9fa;
+        border-left: 3px solid #3498db;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .abstract.expanded .abstract-text {
+        display: block;
+    }
+
+    .abstract-toggle {
+        background: none;
+        border: none;
+        color: #3498db;
+        cursor: pointer;
+        font-size: 0.9rem;
+        padding: 0.25rem 0;
+        text-decoration: underline;
+        margin-top: 0.5rem;
+    }
+
+    .abstract-toggle:hover {
+        color: #2c3e50;
+    }
+
+    /* Style pour la présentation */
+    .speaker-presentation {
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+    }
+
+    .presentation-title {
+        font-size: 1rem;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+    }
+
+    
+
 }
