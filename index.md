@@ -5,7 +5,7 @@ title: "Accueil"
 
 # Dr. Lamia Ziad  
 **Enseignante-Chercheuse — Informatique & Mathématiques Appliquées**  
-**EST Essaouira (UM6P / Cadi Ayyad)**
+**EST Essaouira (Université Cadi Ayyad)**
 
 ---
 
