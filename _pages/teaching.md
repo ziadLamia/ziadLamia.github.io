@@ -157,15 +157,12 @@ author_profile: true
     <li>🧪 <a href="assets/cours/kotlin/TP3_Mob.pdf">TP 3 — Mobile</a></li>
   </ul>
 </ul>
-
 </details>
 
----
----
 
 ---
 <details>
-<summary>🎓 Tableau des PFEs Encadrés (Version Finale)</summary>
+<summary>🎓 PFEs Encadrés</summary>
 
 <div style="overflow-x:auto; margin-top:15px;">
 
