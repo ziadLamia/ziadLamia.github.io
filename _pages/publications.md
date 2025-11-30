@@ -92,7 +92,7 @@ author_profile: true
 10-12 Novembre 2015, Safi, Maroc
 
 ---
-
+<!-- 
 ## 🔬 Travaux en Cours et Soumis
 
 ### En Préparation
@@ -110,7 +110,7 @@ author_profile: true
   *Soumis à SIAM Journal on Imaging Sciences*
 
 ---
-
+-->
 ## 📊 Indicateurs de Recherche
 
 - **Publications totales:** 5 articles dans des revues internationales
@@ -119,10 +119,10 @@ author_profile: true
 - **Expertise:** Traitement d'images, modèles variationnels, optimisation
 
 <div style="text-align: center; margin-top: 2rem;">
-  <a href="https://scholar.google.com/citations?user=VOTRE_ID" class="btn btn--primary" target="_blank">
+  <a href="https://scholar.google.fr/citations?hl=fr&user=lAFvl90AAAAJ" class="btn btn--primary" target="_blank">
     📚 Voir mon profil Google Scholar
   </a>
-  <a href="https://orcid.org/0000-0000-0000-0000" class="btn btn--info" target="_blank">
-    🔬 Profil ORCID
+  <a href="https://www.researchgate.net/profile/Lamia-Ziad?ev=hdr_xprf" class="btn btn--info" target="_blank">
+    🔬 Profil Researchgate
   </a>
 </div>
